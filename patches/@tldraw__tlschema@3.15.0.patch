@@ -1,0 +1,6258 @@
+diff --git a/dist-cjs/index.js b/dist-cjs/index.js
+index 52419bafa1b9643b9a6e285e3380efca65a3f04b..c0e360348b7819f4764433a839880a14e08dffd9 100644
+--- a/dist-cjs/index.js
++++ b/dist-cjs/index.js
+@@ -16,167 +16,4146 @@ var __copyProps = (to, from, except, desc) => {
+   return to;
+ };
+ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+-var index_exports = {};
+-__export(index_exports, {
+-  ArrowShapeArrowheadEndStyle: () => import_TLArrowShape.ArrowShapeArrowheadEndStyle,
+-  ArrowShapeArrowheadStartStyle: () => import_TLArrowShape.ArrowShapeArrowheadStartStyle,
+-  ArrowShapeKindStyle: () => import_TLArrowShape.ArrowShapeKindStyle,
+-  AssetRecordType: () => import_TLAsset.AssetRecordType,
+-  CameraRecordType: () => import_TLCamera.CameraRecordType,
+-  DefaultColorStyle: () => import_TLColorStyle.DefaultColorStyle,
+-  DefaultColorThemePalette: () => import_TLColorStyle.DefaultColorThemePalette,
+-  DefaultDashStyle: () => import_TLDashStyle.DefaultDashStyle,
+-  DefaultFillStyle: () => import_TLFillStyle.DefaultFillStyle,
+-  DefaultFontFamilies: () => import_TLFontStyle.DefaultFontFamilies,
+-  DefaultFontStyle: () => import_TLFontStyle.DefaultFontStyle,
+-  DefaultHorizontalAlignStyle: () => import_TLHorizontalAlignStyle.DefaultHorizontalAlignStyle,
+-  DefaultSizeStyle: () => import_TLSizeStyle.DefaultSizeStyle,
+-  DefaultTextAlignStyle: () => import_TLTextAlignStyle.DefaultTextAlignStyle,
+-  DefaultVerticalAlignStyle: () => import_TLVerticalAlignStyle.DefaultVerticalAlignStyle,
+-  DocumentRecordType: () => import_TLDocument.DocumentRecordType,
+-  ElbowArrowSnap: () => import_TLArrowBinding.ElbowArrowSnap,
+-  EnumStyleProp: () => import_StyleProp.EnumStyleProp,
+-  GeoShapeGeoStyle: () => import_TLGeoShape.GeoShapeGeoStyle,
+-  ImageShapeCrop: () => import_TLImageShape.ImageShapeCrop,
+-  InstancePageStateRecordType: () => import_TLPageState.InstancePageStateRecordType,
+-  InstancePresenceRecordType: () => import_TLPresence.InstancePresenceRecordType,
+-  LANGUAGES: () => import_translations.LANGUAGES,
+-  LineShapeSplineStyle: () => import_TLLineShape.LineShapeSplineStyle,
+-  PageRecordType: () => import_TLPage.PageRecordType,
+-  PointerRecordType: () => import_TLPointer.PointerRecordType,
+-  StyleProp: () => import_StyleProp.StyleProp,
+-  TLDOCUMENT_ID: () => import_TLDocument.TLDOCUMENT_ID,
+-  TLINSTANCE_ID: () => import_TLInstance.TLINSTANCE_ID,
+-  TLPOINTER_ID: () => import_TLPointer.TLPOINTER_ID,
+-  TL_CANVAS_UI_COLOR_TYPES: () => import_TLColor.TL_CANVAS_UI_COLOR_TYPES,
+-  TL_CURSOR_TYPES: () => import_TLCursor.TL_CURSOR_TYPES,
+-  TL_HANDLE_TYPES: () => import_TLHandle.TL_HANDLE_TYPES,
+-  TL_SCRIBBLE_STATES: () => import_TLScribble.TL_SCRIBBLE_STATES,
+-  arrowBindingMigrations: () => import_TLArrowBinding.arrowBindingMigrations,
+-  arrowBindingProps: () => import_TLArrowBinding.arrowBindingProps,
+-  arrowBindingVersions: () => import_TLArrowBinding.arrowBindingVersions,
+-  arrowShapeMigrations: () => import_TLArrowShape.arrowShapeMigrations,
+-  arrowShapeProps: () => import_TLArrowShape.arrowShapeProps,
+-  arrowShapeVersions: () => import_TLArrowShape.arrowShapeVersions,
+-  assetIdValidator: () => import_TLBaseAsset.assetIdValidator,
+-  assetMigrations: () => import_TLAsset.assetMigrations,
+-  assetValidator: () => import_TLAsset.assetValidator,
+-  bindingIdValidator: () => import_TLBaseBinding.bindingIdValidator,
+-  bookmarkShapeMigrations: () => import_TLBookmarkShape.bookmarkShapeMigrations,
+-  bookmarkShapeProps: () => import_TLBookmarkShape.bookmarkShapeProps,
+-  boxModelValidator: () => import_geometry_types.boxModelValidator,
+-  canvasUiColorTypeValidator: () => import_TLColor.canvasUiColorTypeValidator,
+-  createAssetValidator: () => import_TLBaseAsset.createAssetValidator,
+-  createBindingId: () => import_TLBinding.createBindingId,
+-  createBindingPropsMigrationIds: () => import_TLBinding.createBindingPropsMigrationIds,
+-  createBindingPropsMigrationSequence: () => import_TLBinding.createBindingPropsMigrationSequence,
+-  createBindingValidator: () => import_TLBaseBinding.createBindingValidator,
+-  createPresenceStateDerivation: () => import_createPresenceStateDerivation.createPresenceStateDerivation,
+-  createShapeId: () => import_TLShape.createShapeId,
+-  createShapePropsMigrationIds: () => import_TLShape.createShapePropsMigrationIds,
+-  createShapePropsMigrationSequence: () => import_TLShape.createShapePropsMigrationSequence,
+-  createShapeValidator: () => import_TLBaseShape.createShapeValidator,
+-  createTLSchema: () => import_createTLSchema.createTLSchema,
+-  defaultBindingSchemas: () => import_createTLSchema.defaultBindingSchemas,
+-  defaultColorNames: () => import_TLColorStyle.defaultColorNames,
+-  defaultShapeSchemas: () => import_createTLSchema.defaultShapeSchemas,
+-  drawShapeMigrations: () => import_TLDrawShape.drawShapeMigrations,
+-  drawShapeProps: () => import_TLDrawShape.drawShapeProps,
+-  embedShapeMigrations: () => import_TLEmbedShape.embedShapeMigrations,
+-  embedShapeProps: () => import_TLEmbedShape.embedShapeProps,
+-  frameShapeMigrations: () => import_TLFrameShape.frameShapeMigrations,
+-  frameShapeProps: () => import_TLFrameShape.frameShapeProps,
+-  geoShapeMigrations: () => import_TLGeoShape.geoShapeMigrations,
+-  geoShapeProps: () => import_TLGeoShape.geoShapeProps,
+-  getDefaultColorTheme: () => import_TLColorStyle.getDefaultColorTheme,
+-  getDefaultTranslationLocale: () => import_translations.getDefaultTranslationLocale,
+-  getDefaultUserPresence: () => import_createPresenceStateDerivation.getDefaultUserPresence,
+-  getShapePropKeysByStyle: () => import_TLShape.getShapePropKeysByStyle,
+-  groupShapeMigrations: () => import_TLGroupShape.groupShapeMigrations,
+-  groupShapeProps: () => import_TLGroupShape.groupShapeProps,
+-  highlightShapeMigrations: () => import_TLHighlightShape.highlightShapeMigrations,
+-  highlightShapeProps: () => import_TLHighlightShape.highlightShapeProps,
+-  idValidator: () => import_id_validator.idValidator,
+-  imageShapeMigrations: () => import_TLImageShape.imageShapeMigrations,
+-  imageShapeProps: () => import_TLImageShape.imageShapeProps,
+-  isBinding: () => import_TLBinding.isBinding,
+-  isBindingId: () => import_TLBinding.isBindingId,
+-  isDocument: () => import_TLDocument.isDocument,
+-  isPageId: () => import_TLPage.isPageId,
+-  isShape: () => import_TLShape.isShape,
+-  isShapeId: () => import_TLShape.isShapeId,
+-  lineShapeMigrations: () => import_TLLineShape.lineShapeMigrations,
+-  lineShapeProps: () => import_TLLineShape.lineShapeProps,
+-  noteShapeMigrations: () => import_TLNoteShape.noteShapeMigrations,
+-  noteShapeProps: () => import_TLNoteShape.noteShapeProps,
+-  opacityValidator: () => import_TLOpacity.opacityValidator,
+-  pageIdValidator: () => import_TLPage.pageIdValidator,
+-  parentIdValidator: () => import_TLBaseShape.parentIdValidator,
+-  pluckPreservingValues: () => import_TLInstance.pluckPreservingValues,
+-  richTextValidator: () => import_TLRichText.richTextValidator,
+-  rootBindingMigrations: () => import_TLBinding.rootBindingMigrations,
+-  rootShapeMigrations: () => import_TLShape.rootShapeMigrations,
+-  scribbleValidator: () => import_TLScribble.scribbleValidator,
+-  shapeIdValidator: () => import_TLBaseShape.shapeIdValidator,
+-  textShapeMigrations: () => import_TLTextShape.textShapeMigrations,
+-  textShapeProps: () => import_TLTextShape.textShapeProps,
+-  toRichText: () => import_TLRichText.toRichText,
+-  vecModelValidator: () => import_geometry_types.vecModelValidator,
+-  videoShapeMigrations: () => import_TLVideoShape.videoShapeMigrations,
+-  videoShapeProps: () => import_TLVideoShape.videoShapeProps
+-});
+-module.exports = __toCommonJS(index_exports);
++
++// src/index.ts
++var src_exports = {};
++__export(src_exports, {
++  ArrowShapeArrowheadEndStyle: () => ArrowShapeArrowheadEndStyle,
++  ArrowShapeArrowheadStartStyle: () => ArrowShapeArrowheadStartStyle,
++  ArrowShapeKindStyle: () => ArrowShapeKindStyle,
++  AssetRecordType: () => AssetRecordType,
++  CameraRecordType: () => CameraRecordType,
++  DefaultColorStyle: () => DefaultColorStyle,
++  DefaultColorThemePalette: () => DefaultColorThemePalette,
++  DefaultDashStyle: () => DefaultDashStyle,
++  DefaultFillStyle: () => DefaultFillStyle,
++  DefaultFontFamilies: () => DefaultFontFamilies,
++  DefaultFontStyle: () => DefaultFontStyle,
++  DefaultHorizontalAlignStyle: () => DefaultHorizontalAlignStyle,
++  DefaultSizeStyle: () => DefaultSizeStyle,
++  DefaultTextAlignStyle: () => DefaultTextAlignStyle,
++  DefaultVerticalAlignStyle: () => DefaultVerticalAlignStyle,
++  DocumentRecordType: () => DocumentRecordType,
++  ElbowArrowSnap: () => ElbowArrowSnap,
++  EnumStyleProp: () => EnumStyleProp,
++  GeoShapeGeoStyle: () => GeoShapeGeoStyle,
++  ImageShapeCrop: () => ImageShapeCrop,
++  InstancePageStateRecordType: () => InstancePageStateRecordType,
++  InstancePresenceRecordType: () => InstancePresenceRecordType,
++  LANGUAGES: () => LANGUAGES,
++  LineShapeSplineStyle: () => LineShapeSplineStyle,
++  PageRecordType: () => PageRecordType,
++  PointerRecordType: () => PointerRecordType,
++  StyleProp: () => StyleProp,
++  TLDOCUMENT_ID: () => TLDOCUMENT_ID,
++  TLINSTANCE_ID: () => TLINSTANCE_ID,
++  TLPOINTER_ID: () => TLPOINTER_ID,
++  TL_CANVAS_UI_COLOR_TYPES: () => TL_CANVAS_UI_COLOR_TYPES,
++  TL_CURSOR_TYPES: () => TL_CURSOR_TYPES,
++  TL_HANDLE_TYPES: () => TL_HANDLE_TYPES,
++  TL_SCRIBBLE_STATES: () => TL_SCRIBBLE_STATES,
++  arrowBindingMigrations: () => arrowBindingMigrations,
++  arrowBindingProps: () => arrowBindingProps,
++  arrowBindingVersions: () => arrowBindingVersions,
++  arrowShapeMigrations: () => arrowShapeMigrations,
++  arrowShapeProps: () => arrowShapeProps,
++  arrowShapeVersions: () => arrowShapeVersions,
++  assetIdValidator: () => assetIdValidator,
++  assetMigrations: () => assetMigrations,
++  assetValidator: () => assetValidator,
++  bindingIdValidator: () => bindingIdValidator,
++  bookmarkShapeMigrations: () => bookmarkShapeMigrations,
++  bookmarkShapeProps: () => bookmarkShapeProps,
++  boxModelValidator: () => boxModelValidator,
++  canvasUiColorTypeValidator: () => canvasUiColorTypeValidator,
++  createAssetValidator: () => createAssetValidator,
++  createBindingId: () => createBindingId,
++  createBindingPropsMigrationIds: () => createBindingPropsMigrationIds,
++  createBindingPropsMigrationSequence: () => createBindingPropsMigrationSequence,
++  createBindingValidator: () => createBindingValidator,
++  createPresenceStateDerivation: () => createPresenceStateDerivation,
++  createShapeId: () => createShapeId,
++  createShapePropsMigrationIds: () => createShapePropsMigrationIds,
++  createShapePropsMigrationSequence: () => createShapePropsMigrationSequence,
++  createShapeValidator: () => createShapeValidator,
++  createTLSchema: () => createTLSchema,
++  defaultBindingSchemas: () => defaultBindingSchemas,
++  defaultColorNames: () => defaultColorNames,
++  defaultShapeSchemas: () => defaultShapeSchemas,
++  drawShapeMigrations: () => drawShapeMigrations,
++  drawShapeProps: () => drawShapeProps,
++  embedShapeMigrations: () => embedShapeMigrations,
++  embedShapeProps: () => embedShapeProps,
++  frameShapeMigrations: () => frameShapeMigrations,
++  frameShapeProps: () => frameShapeProps,
++  geoShapeMigrations: () => geoShapeMigrations,
++  geoShapeProps: () => geoShapeProps,
++  getDefaultColorTheme: () => getDefaultColorTheme,
++  getDefaultTranslationLocale: () => getDefaultTranslationLocale,
++  getDefaultUserPresence: () => getDefaultUserPresence,
++  getShapePropKeysByStyle: () => getShapePropKeysByStyle,
++  groupShapeMigrations: () => groupShapeMigrations,
++  groupShapeProps: () => groupShapeProps,
++  highlightShapeMigrations: () => highlightShapeMigrations,
++  highlightShapeProps: () => highlightShapeProps,
++  idValidator: () => idValidator,
++  imageShapeMigrations: () => imageShapeMigrations,
++  imageShapeProps: () => imageShapeProps,
++  isBinding: () => isBinding,
++  isBindingId: () => isBindingId,
++  isDocument: () => isDocument,
++  isPageId: () => isPageId,
++  isShape: () => isShape,
++  isShapeId: () => isShapeId,
++  lineShapeMigrations: () => lineShapeMigrations,
++  lineShapeProps: () => lineShapeProps,
++  noteShapeMigrations: () => noteShapeMigrations,
++  noteShapeProps: () => noteShapeProps,
++  opacityValidator: () => opacityValidator,
++  pageIdValidator: () => pageIdValidator,
++  parentIdValidator: () => parentIdValidator,
++  pluckPreservingValues: () => pluckPreservingValues,
++  richTextValidator: () => richTextValidator,
++  rootBindingMigrations: () => rootBindingMigrations,
++  rootShapeMigrations: () => rootShapeMigrations,
++  scribbleValidator: () => scribbleValidator,
++  shapeIdValidator: () => shapeIdValidator,
++  textShapeMigrations: () => textShapeMigrations,
++  textShapeProps: () => textShapeProps,
++  toRichText: () => toRichText,
++  vecModelValidator: () => vecModelValidator,
++  videoShapeMigrations: () => videoShapeMigrations,
++  videoShapeProps: () => videoShapeProps
++});
++module.exports = __toCommonJS(src_exports);
++var import_utils10 = require("@tldraw/utils");
++
++// src/assets/TLBaseAsset.ts
++var import_validate2 = require("@tldraw/validate");
++
++// src/misc/id-validator.ts
++var import_validate = require("@tldraw/validate");
++function idValidator(prefix) {
++  return import_validate.T.string.refine((id) => {
++    if (!id.startsWith(`${prefix}:`)) {
++      throw new Error(`${prefix} ID must start with "${prefix}:"`);
++    }
++    return id;
++  });
++}
++
++// src/assets/TLBaseAsset.ts
++var assetIdValidator = idValidator("asset");
++function createAssetValidator(type, props) {
++  return import_validate2.T.object({
++    id: assetIdValidator,
++    typeName: import_validate2.T.literal("asset"),
++    type: import_validate2.T.literal(type),
++    props,
++    meta: import_validate2.T.jsonValue
++  });
++}
++
++// src/bindings/TLArrowBinding.ts
++var import_validate11 = require("@tldraw/validate");
++
++// src/misc/geometry-types.ts
++var import_validate3 = require("@tldraw/validate");
++var vecModelValidator = import_validate3.T.object({
++  x: import_validate3.T.number,
++  y: import_validate3.T.number,
++  z: import_validate3.T.number.optional()
++});
++var boxModelValidator = import_validate3.T.object({
++  x: import_validate3.T.number,
++  y: import_validate3.T.number,
++  w: import_validate3.T.number,
++  h: import_validate3.T.number
++});
++
++// src/records/TLBinding.ts
++var import_store = require("@tldraw/store");
+ var import_utils = require("@tldraw/utils");
+-var import_TLBaseAsset = require("./assets/TLBaseAsset");
+-var import_TLArrowBinding = require("./bindings/TLArrowBinding");
+-var import_TLBaseBinding = require("./bindings/TLBaseBinding");
+-var import_createPresenceStateDerivation = require("./createPresenceStateDerivation");
+-var import_createTLSchema = require("./createTLSchema");
+-var import_geometry_types = require("./misc/geometry-types");
+-var import_id_validator = require("./misc/id-validator");
+-var import_TLColor = require("./misc/TLColor");
+-var import_TLCursor = require("./misc/TLCursor");
+-var import_TLHandle = require("./misc/TLHandle");
+-var import_TLOpacity = require("./misc/TLOpacity");
+-var import_TLRichText = require("./misc/TLRichText");
+-var import_TLScribble = require("./misc/TLScribble");
+-var import_TLAsset = require("./records/TLAsset");
+-var import_TLBinding = require("./records/TLBinding");
+-var import_TLCamera = require("./records/TLCamera");
+-var import_TLDocument = require("./records/TLDocument");
+-var import_TLInstance = require("./records/TLInstance");
+-var import_TLPage = require("./records/TLPage");
+-var import_TLPageState = require("./records/TLPageState");
+-var import_TLPointer = require("./records/TLPointer");
+-var import_TLPresence = require("./records/TLPresence");
+-var import_TLShape = require("./records/TLShape");
+-var import_TLArrowShape = require("./shapes/TLArrowShape");
+-var import_TLBaseShape = require("./shapes/TLBaseShape");
+-var import_TLBookmarkShape = require("./shapes/TLBookmarkShape");
+-var import_TLDrawShape = require("./shapes/TLDrawShape");
+-var import_TLEmbedShape = require("./shapes/TLEmbedShape");
+-var import_TLFrameShape = require("./shapes/TLFrameShape");
+-var import_TLGeoShape = require("./shapes/TLGeoShape");
+-var import_TLGroupShape = require("./shapes/TLGroupShape");
+-var import_TLHighlightShape = require("./shapes/TLHighlightShape");
+-var import_TLImageShape = require("./shapes/TLImageShape");
+-var import_TLLineShape = require("./shapes/TLLineShape");
+-var import_TLNoteShape = require("./shapes/TLNoteShape");
+-var import_TLTextShape = require("./shapes/TLTextShape");
+-var import_TLVideoShape = require("./shapes/TLVideoShape");
+-var import_StyleProp = require("./styles/StyleProp");
+-var import_TLColorStyle = require("./styles/TLColorStyle");
+-var import_TLDashStyle = require("./styles/TLDashStyle");
+-var import_TLFillStyle = require("./styles/TLFillStyle");
+-var import_TLFontStyle = require("./styles/TLFontStyle");
+-var import_TLHorizontalAlignStyle = require("./styles/TLHorizontalAlignStyle");
+-var import_TLSizeStyle = require("./styles/TLSizeStyle");
+-var import_TLTextAlignStyle = require("./styles/TLTextAlignStyle");
+-var import_TLVerticalAlignStyle = require("./styles/TLVerticalAlignStyle");
+-var import_translations = require("./translations/translations");
+-(0, import_utils.registerTldrawLibraryVersion)(
+-  "@tldraw/tlschema",
+-  "3.15.0",
+-  "cjs"
++var import_validate7 = require("@tldraw/validate");
++
++// src/bindings/TLBaseBinding.ts
++var import_validate6 = require("@tldraw/validate");
++
++// src/shapes/TLBaseShape.ts
++var import_validate5 = require("@tldraw/validate");
++
++// src/misc/TLOpacity.ts
++var import_validate4 = require("@tldraw/validate");
++var opacityValidator = import_validate4.T.number.check((n) => {
++  if (n < 0 || n > 1) {
++    throw new import_validate4.T.ValidationError("Opacity must be between 0 and 1");
++  }
++});
++
++// src/shapes/TLBaseShape.ts
++var parentIdValidator = import_validate5.T.string.refine((id) => {
++  if (!id.startsWith("page:") && !id.startsWith("shape:")) {
++    throw new Error('Parent ID must start with "page:" or "shape:"');
++  }
++  return id;
++});
++var shapeIdValidator = idValidator("shape");
++function createShapeValidator(type, props, meta) {
++  return import_validate5.T.object({
++    id: shapeIdValidator,
++    typeName: import_validate5.T.literal("shape"),
++    x: import_validate5.T.number,
++    y: import_validate5.T.number,
++    rotation: import_validate5.T.number,
++    index: import_validate5.T.indexKey,
++    parentId: parentIdValidator,
++    type: import_validate5.T.literal(type),
++    isLocked: import_validate5.T.boolean,
++    opacity: opacityValidator,
++    props: props ? import_validate5.T.object(props) : import_validate5.T.jsonValue,
++    meta: meta ? import_validate5.T.object(meta) : import_validate5.T.jsonValue
++  });
++}
++
++// src/bindings/TLBaseBinding.ts
++var bindingIdValidator = idValidator("binding");
++function createBindingValidator(type, props, meta) {
++  return import_validate6.T.object({
++    id: bindingIdValidator,
++    typeName: import_validate6.T.literal("binding"),
++    type: import_validate6.T.literal(type),
++    fromId: shapeIdValidator,
++    toId: shapeIdValidator,
++    props: props ? import_validate6.T.object(props) : import_validate6.T.jsonValue,
++    meta: meta ? import_validate6.T.object(meta) : import_validate6.T.jsonValue
++  });
++}
++
++// src/records/TLBinding.ts
++var rootBindingVersions = (0, import_store.createMigrationIds)("com.tldraw.binding", {});
++var rootBindingMigrations = (0, import_store.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.binding",
++  recordType: "binding",
++  sequence: []
++});
++function isBinding(record) {
++  if (!record)
++    return false;
++  return record.typeName === "binding";
++}
++function isBindingId(id) {
++  if (!id)
++    return false;
++  return id.startsWith("binding:");
++}
++function createBindingId(id) {
++  return `binding:${id ?? (0, import_utils.uniqueId)()}`;
++}
++function createBindingPropsMigrationSequence(migrations) {
++  return migrations;
++}
++function createBindingPropsMigrationIds(bindingType, ids) {
++  return (0, import_utils.mapObjectMapValues)(ids, (_k, v) => `com.tldraw.binding.${bindingType}/${v}`);
++}
++function createBindingRecordType(bindings) {
++  return (0, import_store.createRecordType)("binding", {
++    scope: "document",
++    validator: import_validate7.T.model(
++      "binding",
++      import_validate7.T.union(
++        "type",
++        (0, import_utils.mapObjectMapValues)(
++          bindings,
++          (type, { props, meta }) => createBindingValidator(type, props, meta)
++        )
++      )
++    )
++  }).withDefaultProperties(() => ({
++    meta: {}
++  }));
++}
++
++// src/shapes/TLArrowShape.ts
++var import_store4 = require("@tldraw/store");
++var import_validate10 = require("@tldraw/validate");
++
++// src/records/TLShape.ts
++var import_store2 = require("@tldraw/store");
++var import_utils2 = require("@tldraw/utils");
++var import_validate9 = require("@tldraw/validate");
++
++// src/styles/StyleProp.ts
++var import_validate8 = require("@tldraw/validate");
++var StyleProp = class _StyleProp {
++  /** @internal */
++  constructor(id, defaultValue, type) {
++    this.id = id;
++    this.defaultValue = defaultValue;
++    this.type = type;
++  }
++  /**
++   * Define a new {@link StyleProp}.
++   *
++   * @param uniqueId - Each StyleProp must have a unique ID. We recommend you prefix this with
++   * your app/library name.
++   * @param options -
++   * - `defaultValue`: The default value for this style prop.
++   *
++   * - `type`: Optionally, describe what type of data you expect for this style prop.
++   *
++   * @example
++   * ```ts
++   * import {T} from '@tldraw/validate'
++   * import {StyleProp} from '@tldraw/tlschema'
++   *
++   * const MyLineWidthProp = StyleProp.define('myApp:lineWidth', {
++   *   defaultValue: 1,
++   *   type: T.number,
++   * })
++   * ```
++   * @public
++   */
++  static define(uniqueId3, options) {
++    const { defaultValue, type = import_validate8.T.any } = options;
++    return new _StyleProp(uniqueId3, defaultValue, type);
++  }
++  /**
++   * Define a new {@link StyleProp} as a list of possible values.
++   *
++   * @param uniqueId - Each StyleProp must have a unique ID. We recommend you prefix this with
++   * your app/library name.
++   * @param options -
++   * - `defaultValue`: The default value for this style prop.
++   *
++   * - `values`: An array of possible values of this style prop.
++   *
++   * @example
++   * ```ts
++   * import {StyleProp} from '@tldraw/tlschema'
++   *
++   * const MySizeProp = StyleProp.defineEnum('myApp:size', {
++   *   defaultValue: 'medium',
++   *   values: ['small', 'medium', 'large'],
++   * })
++   * ```
++   */
++  static defineEnum(uniqueId3, options) {
++    const { defaultValue, values } = options;
++    return new EnumStyleProp(uniqueId3, defaultValue, values);
++  }
++  setDefaultValue(value) {
++    this.defaultValue = value;
++  }
++  validate(value) {
++    return this.type.validate(value);
++  }
++  validateUsingKnownGoodVersion(prevValue, newValue) {
++    if (this.type.validateUsingKnownGoodVersion) {
++      return this.type.validateUsingKnownGoodVersion(prevValue, newValue);
++    } else {
++      return this.validate(newValue);
++    }
++  }
++};
++var EnumStyleProp = class extends StyleProp {
++  /** @internal */
++  constructor(id, defaultValue, values) {
++    super(id, defaultValue, import_validate8.T.literalEnum(...values));
++    this.values = values;
++  }
++};
++
++// src/records/TLShape.ts
++var rootShapeVersions = (0, import_store2.createMigrationIds)("com.tldraw.shape", {
++  AddIsLocked: 1,
++  HoistOpacity: 2,
++  AddMeta: 3,
++  AddWhite: 4
++});
++var rootShapeMigrations = (0, import_store2.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.shape",
++  recordType: "shape",
++  sequence: [
++    {
++      id: rootShapeVersions.AddIsLocked,
++      up: (record) => {
++        record.isLocked = false;
++      },
++      down: (record) => {
++        delete record.isLocked;
++      }
++    },
++    {
++      id: rootShapeVersions.HoistOpacity,
++      up: (record) => {
++        record.opacity = Number(record.props.opacity ?? "1");
++        delete record.props.opacity;
++      },
++      down: (record) => {
++        const opacity = record.opacity;
++        delete record.opacity;
++        record.props.opacity = opacity < 0.175 ? "0.1" : opacity < 0.375 ? "0.25" : opacity < 0.625 ? "0.5" : opacity < 0.875 ? "0.75" : "1";
++      }
++    },
++    {
++      id: rootShapeVersions.AddMeta,
++      up: (record) => {
++        record.meta = {};
++      }
++    },
++    {
++      id: rootShapeVersions.AddWhite,
++      up: (_record) => {
++      },
++      down: (record) => {
++        if (record.props.color === "white") {
++          record.props.color = "black";
++        }
++      }
++    }
++  ]
++});
++function isShape(record) {
++  if (!record)
++    return false;
++  return record.typeName === "shape";
++}
++function isShapeId(id) {
++  if (!id)
++    return false;
++  return id.startsWith("shape:");
++}
++function createShapeId(id) {
++  return `shape:${id ?? (0, import_utils2.uniqueId)()}`;
++}
++function getShapePropKeysByStyle(props) {
++  const propKeysByStyle = /* @__PURE__ */ new Map();
++  for (const [key, prop] of Object.entries(props)) {
++    if (prop instanceof StyleProp) {
++      if (propKeysByStyle.has(prop)) {
++        throw new Error(
++          `Duplicate style prop ${prop.id}. Each style prop can only be used once within a shape.`
++        );
++      }
++      propKeysByStyle.set(prop, key);
++    }
++  }
++  return propKeysByStyle;
++}
++function createShapePropsMigrationSequence(migrations) {
++  return migrations;
++}
++function createShapePropsMigrationIds(shapeType, ids) {
++  return (0, import_utils2.mapObjectMapValues)(ids, (_k, v) => `com.tldraw.shape.${shapeType}/${v}`);
++}
++function createShapeRecordType(shapes) {
++  return (0, import_store2.createRecordType)("shape", {
++    scope: "document",
++    validator: import_validate9.T.model(
++      "shape",
++      import_validate9.T.union(
++        "type",
++        (0, import_utils2.mapObjectMapValues)(
++          shapes,
++          (type, { props, meta }) => createShapeValidator(type, props, meta)
++        )
++      )
++    )
++  }).withDefaultProperties(() => ({
++    x: 0,
++    y: 0,
++    rotation: 0,
++    isLocked: false,
++    opacity: 1,
++    meta: {}
++  }));
++}
++
++// src/recordsWithProps.ts
++var import_store3 = require("@tldraw/store");
++var import_utils3 = require("@tldraw/utils");
++function processPropsMigrations(typeName, records) {
++  const result = [];
++  for (const [subType, { migrations }] of Object.entries(records)) {
++    const sequenceId = `com.tldraw.${typeName}.${subType}`;
++    if (!migrations) {
++      result.push(
++        (0, import_store3.createMigrationSequence)({
++          sequenceId,
++          retroactive: true,
++          sequence: []
++        })
++      );
++    } else if ("sequenceId" in migrations) {
++      (0, import_utils3.assert)(
++        sequenceId === migrations.sequenceId,
++        `sequenceId mismatch for ${subType} ${import_store3.RecordType} migrations. Expected '${sequenceId}', got '${migrations.sequenceId}'`
++      );
++      result.push(migrations);
++    } else if ("sequence" in migrations) {
++      result.push(
++        (0, import_store3.createMigrationSequence)({
++          sequenceId,
++          retroactive: true,
++          sequence: migrations.sequence.map(
++            (m) => "id" in m ? createPropsMigration(typeName, subType, m) : m
++          )
++        })
++      );
++    } else {
++      result.push(
++        (0, import_store3.createMigrationSequence)({
++          sequenceId,
++          retroactive: true,
++          sequence: Object.keys(migrations.migrators).map((k) => Number(k)).sort((a, b) => a - b).map(
++            (version) => ({
++              id: `${sequenceId}/${version}`,
++              scope: "record",
++              filter: (r) => r.typeName === typeName && r.type === subType,
++              up: (record) => {
++                const result2 = migrations.migrators[version].up(record);
++                if (result2) {
++                  return result2;
++                }
++              },
++              down: (record) => {
++                const result2 = migrations.migrators[version].down(record);
++                if (result2) {
++                  return result2;
++                }
++              }
++            })
++          )
++        })
++      );
++    }
++  }
++  return result;
++}
++function createPropsMigration(typeName, subType, m) {
++  return {
++    id: m.id,
++    dependsOn: m.dependsOn,
++    scope: "record",
++    filter: (r) => r.typeName === typeName && r.type === subType,
++    up: (record) => {
++      const result = m.up(record.props);
++      if (result) {
++        record.props = result;
++      }
++    },
++    down: typeof m.down === "function" ? (record) => {
++      const result = m.down(record.props);
++      if (result) {
++        record.props = result;
++      }
++    } : void 0
++  };
++}
++
++// src/styles/TLColorStyle.ts
++var defaultColorNames = [
++  "black",
++  "lavender",
++  "pink",
++  "mauve",
++  "blue",
++  "sky",
++  "teal",
++  "green",
++  "yellow",
++  "peach",
++  "maroon",
++  "red"
++];
++var DefaultColorThemePalette = {
++  lightMode: {
++    id: "light",
++    text: "#4c4f69",
++    background: "#eff1f5",
++    solid: "#eff1f5",
++    black: {
++      solid: "#4c4f69",
++      fill: "#4c4f69",
++      semi: "#dde0f0",
++      pattern: "#5c5f77",
++      frame: {
++        headingStroke: "#6c6f85",
++        headingFill: "#e6e9ef",
++        stroke: "#6c6f85",
++        fill: "#eff1f5",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#bcc0cc",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
++      }
++    },
++    lavender: {
++      solid: "#7287fd",
++      fill: "#7287fd",
++      semi: "#dde3ff",
++      pattern: "#5b6de0",
++      frame: {
++        headingStroke: "#8898fe",
++        headingFill: "#eef0ff",
++        stroke: "#8898fe",
++        fill: "#f5f6ff",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#c0c8ff",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#7287fd",
++        p3: "color(display-p3 0.447 0.529 0.992)"
++      }
++    },
++    pink: {
++      solid: "#ea76cb",
++      fill: "#ea76cb",
++      semi: "#fae0f5",
++      pattern: "#df5dbc",
++      frame: {
++        headingStroke: "#ed8ed3",
++        headingFill: "#fdf0fb",
++        stroke: "#ed8ed3",
++        fill: "#fef8fd",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#f4b8e4",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#ea76cb",
++        p3: "color(display-p3 0.918 0.463 0.796)"
++      }
++    },
++    mauve: {
++      solid: "#8839ef",
++      fill: "#8839ef",
++      semi: "#e8d5fc",
++      pattern: "#7325e0",
++      frame: {
++        headingStroke: "#9b56f0",
++        headingFill: "#f5eefe",
++        stroke: "#9b56f0",
++        fill: "#faf6ff",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#c9a3f7",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#8839ef",
++        p3: "color(display-p3 0.533 0.224 0.937)"
++      }
++    },
++    blue: {
++      solid: "#1e66f5",
++      fill: "#1e66f5",
++      semi: "#d0defe",
++      pattern: "#1252d3",
++      frame: {
++        headingStroke: "#3d7df6",
++        headingFill: "#eef3fe",
++        stroke: "#3d7df6",
++        fill: "#f5f8ff",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#96b4fb",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#1e66f5",
++        p3: "color(display-p3 0.118 0.400 0.961)"
++      }
++    },
++    sky: {
++      solid: "#04a5e5",
++      fill: "#04a5e5",
++      semi: "#ccecf9",
++      pattern: "#0393cc",
++      frame: {
++        headingStroke: "#1fb0e8",
++        headingFill: "#eaf7fd",
++        stroke: "#1fb0e8",
++        fill: "#f3fbfe",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#84d1f1",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#04a5e5",
++        p3: "color(display-p3 0.016 0.647 0.898)"
++      }
++    },
++    teal: {
++      solid: "#179299",
++      fill: "#179299",
++      semi: "#cce8ea",
++      pattern: "#13838a",
++      frame: {
++        headingStroke: "#1ea5ad",
++        headingFill: "#e8f7f8",
++        stroke: "#1ea5ad",
++        fill: "#f2fbfb",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#7ec9cd",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#179299",
++        p3: "color(display-p3 0.090 0.573 0.600)"
++      }
++    },
++    green: {
++      solid: "#40a02b",
++      fill: "#40a02b",
++      semi: "#d4edce",
++      pattern: "#358c22",
++      frame: {
++        headingStroke: "#52ae3e",
++        headingFill: "#edf8ea",
++        stroke: "#52ae3e",
++        fill: "#f5fbf3",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#97d282",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#40a02b",
++        p3: "color(display-p3 0.251 0.627 0.169)"
++      }
++    },
++    yellow: {
++      solid: "#df8e1d",
++      fill: "#df8e1d",
++      semi: "#f6e5cc",
++      pattern: "#c47b12",
++      frame: {
++        headingStroke: "#e49b35",
++        headingFill: "#fdf5e8",
++        stroke: "#e49b35",
++        fill: "#fefaf3",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#efca8c",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#df8e1d",
++        p3: "color(display-p3 0.875 0.557 0.114)"
++      }
++    },
++    peach: {
++      solid: "#fe640b",
++      fill: "#fe640b",
++      semi: "#feddcc",
++      pattern: "#e55509",
++      frame: {
++        headingStroke: "#fe7529",
++        headingFill: "#fff2ea",
++        stroke: "#fe7529",
++        fill: "#fff8f3",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#fea97c",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#fe640b",
++        p3: "color(display-p3 0.996 0.392 0.043)"
++      }
++    },
++    maroon: {
++      solid: "#e64553",
++      fill: "#e64553",
++      semi: "#f9d4d7",
++      pattern: "#d03040",
++      frame: {
++        headingStroke: "#e95b68",
++        headingFill: "#fdf0f1",
++        stroke: "#e95b68",
++        fill: "#fef7f8",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#f2a0a8",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#e64553",
++        p3: "color(display-p3 0.902 0.271 0.325)"
++      }
++    },
++    red: {
++      solid: "#d20f39",
++      fill: "#d20f39",
++      semi: "#f5ccd5",
++      pattern: "#bc0c30",
++      frame: {
++        headingStroke: "#d92548",
++        headingFill: "#fcedf1",
++        stroke: "#d92548",
++        fill: "#fef5f7",
++        text: "#4c4f69"
++      },
++      note: {
++        fill: "#eb8099",
++        text: "#4c4f69"
++      },
++      highlight: {
++        srgb: "#d20f39",
++        p3: "color(display-p3 0.824 0.059 0.224)"
++      }
++    }
++  },
++  darkMode: {
++    id: "dark",
++    text: "#cad3f5",
++    background: "#24273a",
++    solid: "#24273a",
++    black: {
++      solid: "#cad3f5",
++      fill: "#cad3f5",
++      semi: "#363a4f",
++      pattern: "#a5adcb",
++      frame: {
++        headingStroke: "#494d64",
++        headingFill: "#1e2030",
++        stroke: "#494d64",
++        fill: "#24273a",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#363a4f",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
++      }
++    },
++    lavender: {
++      solid: "#b7bdf8",
++      fill: "#b7bdf8",
++      semi: "#2d3055",
++      pattern: "#8898d8",
++      frame: {
++        headingStroke: "#5b6487",
++        headingFill: "#252a45",
++        stroke: "#5b6487",
++        fill: "#1a1e35",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#3a3f6e",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#b7bdf8",
++        p3: "color(display-p3 0.718 0.741 0.973)"
++      }
++    },
++    pink: {
++      solid: "#f5bde6",
++      fill: "#f5bde6",
++      semi: "#3d2a3d",
++      pattern: "#d898c8",
++      frame: {
++        headingStroke: "#7a4d72",
++        headingFill: "#2e1e2e",
++        stroke: "#7a4d72",
++        fill: "#1e1420",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#6b3a64",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#f5bde6",
++        p3: "color(display-p3 0.961 0.741 0.902)"
++      }
++    },
++    mauve: {
++      solid: "#c6a0f6",
++      fill: "#c6a0f6",
++      semi: "#352a47",
++      pattern: "#a878d8",
++      frame: {
++        headingStroke: "#6b4d8a",
++        headingFill: "#271e36",
++        stroke: "#6b4d8a",
++        fill: "#1c1428",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#5a3a78",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#c6a0f6",
++        p3: "color(display-p3 0.776 0.627 0.965)"
++      }
++    },
++    blue: {
++      solid: "#8aadf4",
++      fill: "#8aadf4",
++      semi: "#263047",
++      pattern: "#6888d8",
++      frame: {
++        headingStroke: "#3d5e8a",
++        headingFill: "#1c2436",
++        stroke: "#3d5e8a",
++        fill: "#131824",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#2a4070",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#8aadf4",
++        p3: "color(display-p3 0.541 0.678 0.957)"
++      }
++    },
++    sky: {
++      solid: "#91d7e3",
++      fill: "#91d7e3",
++      semi: "#253840",
++      pattern: "#72b8c8",
++      frame: {
++        headingStroke: "#3d7882",
++        headingFill: "#1c2d33",
++        stroke: "#3d7882",
++        fill: "#141f24",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#2a5a65",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#91d7e3",
++        p3: "color(display-p3 0.569 0.843 0.890)"
++      }
++    },
++    teal: {
++      solid: "#8bd5ca",
++      fill: "#8bd5ca",
++      semi: "#25383a",
++      pattern: "#6eb8ae",
++      frame: {
++        headingStroke: "#3d7870",
++        headingFill: "#1c2d2c",
++        stroke: "#3d7870",
++        fill: "#141f1f",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#2a5a55",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#8bd5ca",
++        p3: "color(display-p3 0.545 0.835 0.792)"
++      }
++    },
++    green: {
++      solid: "#a6da95",
++      fill: "#a6da95",
++      semi: "#263a26",
++      pattern: "#88b878",
++      frame: {
++        headingStroke: "#4a7a3d",
++        headingFill: "#1e2e1c",
++        stroke: "#4a7a3d",
++        fill: "#151f14",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#365e2e",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#a6da95",
++        p3: "color(display-p3 0.651 0.855 0.584)"
++      }
++    },
++    yellow: {
++      solid: "#eed49f",
++      fill: "#eed49f",
++      semi: "#3a3225",
++      pattern: "#c8a878",
++      frame: {
++        headingStroke: "#6e5a2a",
++        headingFill: "#2a2416",
++        stroke: "#6e5a2a",
++        fill: "#1c180f",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#5a4820",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#eed49f",
++        p3: "color(display-p3 0.933 0.831 0.624)"
++      }
++    },
++    peach: {
++      solid: "#f5a97f",
++      fill: "#f5a97f",
++      semi: "#3d2e24",
++      pattern: "#c88868",
++      frame: {
++        headingStroke: "#7a4e2a",
++        headingFill: "#2e1e14",
++        stroke: "#7a4e2a",
++        fill: "#1e140f",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#6b3d22",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#f5a97f",
++        p3: "color(display-p3 0.961 0.663 0.498)"
++      }
++    },
++    maroon: {
++      solid: "#ee99a0",
++      fill: "#ee99a0",
++      semi: "#3d2830",
++      pattern: "#c87888",
++      frame: {
++        headingStroke: "#7a3d4a",
++        headingFill: "#2e1c22",
++        stroke: "#7a3d4a",
++        fill: "#1e1318",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#6b2e38",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#ee99a0",
++        p3: "color(display-p3 0.933 0.600 0.627)"
++      }
++    },
++    red: {
++      solid: "#ed8796",
++      fill: "#ed8796",
++      semi: "#3d2530",
++      pattern: "#c86878",
++      frame: {
++        headingStroke: "#7a3245",
++        headingFill: "#2e1620",
++        stroke: "#7a3245",
++        fill: "#1e1018",
++        text: "#cad3f5"
++      },
++      note: {
++        fill: "#6b2438",
++        text: "#cad3f5"
++      },
++      highlight: {
++        srgb: "#ed8796",
++        p3: "color(display-p3 0.929 0.529 0.588)"
++      }
++    }
++  }
++};
++function getDefaultColorTheme(opts) {
++  return opts.isDarkMode ? DefaultColorThemePalette.darkMode : DefaultColorThemePalette.lightMode;
++}
++var DefaultColorStyle = StyleProp.defineEnum("tldraw:color", {
++  defaultValue: "black",
++  values: defaultColorNames
++});
++var DefaultLabelColorStyle = StyleProp.defineEnum("tldraw:labelColor", {
++  defaultValue: "black",
++  values: defaultColorNames
++});
++
++// src/styles/TLDashStyle.ts
++var DefaultDashStyle = StyleProp.defineEnum("tldraw:dash", {
++  defaultValue: "draw",
++  values: ["draw", "solid", "dashed", "dotted"]
++});
++
++// src/styles/TLFillStyle.ts
++var DefaultFillStyle = StyleProp.defineEnum("tldraw:fill", {
++  defaultValue: "none",
++  values: ["none", "semi", "solid", "pattern", "fill"]
++});
++
++// src/styles/TLFontStyle.ts
++var DefaultFontStyle = StyleProp.defineEnum("tldraw:font", {
++  defaultValue: "draw",
++  values: ["draw", "sans", "serif", "mono"]
++});
++var DefaultFontFamilies = {
++  draw: "'tldraw_draw', sans-serif",
++  sans: "'tldraw_sans', sans-serif",
++  serif: "'tldraw_serif', serif",
++  mono: "'tldraw_mono', monospace"
++};
++
++// src/styles/TLSizeStyle.ts
++var DefaultSizeStyle = StyleProp.defineEnum("tldraw:size", {
++  defaultValue: "m",
++  values: ["s", "m", "l", "xl"]
++});
++
++// src/shapes/TLArrowShape.ts
++var arrowKinds = ["arc", "elbow"];
++var ArrowShapeKindStyle = StyleProp.defineEnum("tldraw:arrowKind", {
++  defaultValue: "arc",
++  values: arrowKinds
++});
++var arrowheadTypes = [
++  "arrow",
++  "triangle",
++  "square",
++  "dot",
++  "pipe",
++  "diamond",
++  "inverted",
++  "bar",
++  "none"
++];
++var ArrowShapeArrowheadStartStyle = StyleProp.defineEnum("tldraw:arrowheadStart", {
++  defaultValue: "none",
++  values: arrowheadTypes
++});
++var ArrowShapeArrowheadEndStyle = StyleProp.defineEnum("tldraw:arrowheadEnd", {
++  defaultValue: "arrow",
++  values: arrowheadTypes
++});
++var arrowShapeProps = {
++  kind: ArrowShapeKindStyle,
++  labelColor: DefaultLabelColorStyle,
++  color: DefaultColorStyle,
++  fill: DefaultFillStyle,
++  dash: DefaultDashStyle,
++  size: DefaultSizeStyle,
++  arrowheadStart: ArrowShapeArrowheadStartStyle,
++  arrowheadEnd: ArrowShapeArrowheadEndStyle,
++  font: DefaultFontStyle,
++  start: vecModelValidator,
++  end: vecModelValidator,
++  bend: import_validate10.T.number,
++  text: import_validate10.T.string,
++  labelPosition: import_validate10.T.number,
++  scale: import_validate10.T.nonZeroNumber,
++  elbowMidPoint: import_validate10.T.number
++};
++var arrowShapeVersions = createShapePropsMigrationIds("arrow", {
++  AddLabelColor: 1,
++  AddIsPrecise: 2,
++  AddLabelPosition: 3,
++  ExtractBindings: 4,
++  AddScale: 5,
++  AddElbow: 6
++});
++function propsMigration(migration) {
++  return createPropsMigration("shape", "arrow", migration);
++}
++var arrowShapeMigrations = (0, import_store4.createMigrationSequence)({
++  sequenceId: "com.tldraw.shape.arrow",
++  retroactive: false,
++  sequence: [
++    propsMigration({
++      id: arrowShapeVersions.AddLabelColor,
++      up: (props) => {
++        props.labelColor = "black";
++      },
++      down: "retired"
++    }),
++    propsMigration({
++      id: arrowShapeVersions.AddIsPrecise,
++      up: ({ start, end }) => {
++        if (start.type === "binding") {
++          start.isPrecise = !(start.normalizedAnchor.x === 0.5 && start.normalizedAnchor.y === 0.5);
++        }
++        if (end.type === "binding") {
++          end.isPrecise = !(end.normalizedAnchor.x === 0.5 && end.normalizedAnchor.y === 0.5);
++        }
++      },
++      down: ({ start, end }) => {
++        if (start.type === "binding") {
++          if (!start.isPrecise) {
++            start.normalizedAnchor = { x: 0.5, y: 0.5 };
++          }
++          delete start.isPrecise;
++        }
++        if (end.type === "binding") {
++          if (!end.isPrecise) {
++            end.normalizedAnchor = { x: 0.5, y: 0.5 };
++          }
++          delete end.isPrecise;
++        }
++      }
++    }),
++    propsMigration({
++      id: arrowShapeVersions.AddLabelPosition,
++      up: (props) => {
++        props.labelPosition = 0.5;
++      },
++      down: (props) => {
++        delete props.labelPosition;
++      }
++    }),
++    {
++      id: arrowShapeVersions.ExtractBindings,
++      scope: "store",
++      up: (oldStore) => {
++        const arrows = Object.values(oldStore).filter(
++          (r) => r.typeName === "shape" && r.type === "arrow"
++        );
++        for (const arrow of arrows) {
++          const { start, end } = arrow.props;
++          if (start.type === "binding") {
++            const id = createBindingId();
++            const binding = {
++              typeName: "binding",
++              id,
++              type: "arrow",
++              fromId: arrow.id,
++              toId: start.boundShapeId,
++              meta: {},
++              props: {
++                terminal: "start",
++                normalizedAnchor: start.normalizedAnchor,
++                isExact: start.isExact,
++                isPrecise: start.isPrecise
++              }
++            };
++            oldStore[id] = binding;
++            arrow.props.start = { x: 0, y: 0 };
++          } else {
++            delete arrow.props.start.type;
++          }
++          if (end.type === "binding") {
++            const id = createBindingId();
++            const binding = {
++              typeName: "binding",
++              id,
++              type: "arrow",
++              fromId: arrow.id,
++              toId: end.boundShapeId,
++              meta: {},
++              props: {
++                terminal: "end",
++                normalizedAnchor: end.normalizedAnchor,
++                isExact: end.isExact,
++                isPrecise: end.isPrecise
++              }
++            };
++            oldStore[id] = binding;
++            arrow.props.end = { x: 0, y: 0 };
++          } else {
++            delete arrow.props.end.type;
++          }
++        }
++      }
++    },
++    propsMigration({
++      id: arrowShapeVersions.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    }),
++    propsMigration({
++      id: arrowShapeVersions.AddElbow,
++      up: (props) => {
++        props.kind = "arc";
++        props.elbowMidPoint = 0.5;
++      },
++      down: (props) => {
++        delete props.kind;
++        delete props.elbowMidPoint;
++      }
++    })
++  ]
++});
++
++// src/bindings/TLArrowBinding.ts
++var ElbowArrowSnap = import_validate11.T.literalEnum("center", "edge-point", "edge", "none");
++var arrowBindingProps = {
++  terminal: import_validate11.T.literalEnum("start", "end"),
++  normalizedAnchor: vecModelValidator,
++  isExact: import_validate11.T.boolean,
++  isPrecise: import_validate11.T.boolean,
++  snap: ElbowArrowSnap
++};
++var arrowBindingVersions = createBindingPropsMigrationIds("arrow", {
++  AddSnap: 1
++});
++var arrowBindingMigrations = createBindingPropsMigrationSequence({
++  sequence: [
++    { dependsOn: [arrowShapeVersions.ExtractBindings] },
++    {
++      id: arrowBindingVersions.AddSnap,
++      up: (props) => {
++        props.snap = "none";
++      },
++      down: (props) => {
++        delete props.snap;
++      }
++    }
++  ]
++});
++
++// src/createPresenceStateDerivation.ts
++var import_state = require("@tldraw/state");
++
++// src/records/TLCamera.ts
++var import_store5 = require("@tldraw/store");
++var import_validate12 = require("@tldraw/validate");
++var cameraValidator = import_validate12.T.model(
++  "camera",
++  import_validate12.T.object({
++    typeName: import_validate12.T.literal("camera"),
++    id: idValidator("camera"),
++    x: import_validate12.T.number,
++    y: import_validate12.T.number,
++    z: import_validate12.T.number,
++    meta: import_validate12.T.jsonValue
++  })
++);
++var cameraVersions = (0, import_store5.createMigrationIds)("com.tldraw.camera", {
++  AddMeta: 1
++});
++var cameraMigrations = (0, import_store5.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.camera",
++  recordType: "camera",
++  sequence: [
++    {
++      id: cameraVersions.AddMeta,
++      up: (record) => {
++        ;
++        record.meta = {};
++      }
++    }
++  ]
++});
++var CameraRecordType = (0, import_store5.createRecordType)("camera", {
++  validator: cameraValidator,
++  scope: "session"
++}).withDefaultProperties(
++  () => ({
++    x: 0,
++    y: 0,
++    z: 1,
++    meta: {}
++  })
++);
++
++// src/records/TLInstance.ts
++var import_store7 = require("@tldraw/store");
++var import_utils4 = require("@tldraw/utils");
++var import_validate17 = require("@tldraw/validate");
++
++// src/misc/TLCursor.ts
++var import_validate13 = require("@tldraw/validate");
++var TL_CURSOR_TYPES = /* @__PURE__ */ new Set([
++  "none",
++  "default",
++  "pointer",
++  "cross",
++  "grab",
++  "rotate",
++  "grabbing",
++  "resize-edge",
++  "resize-corner",
++  "text",
++  "move",
++  "ew-resize",
++  "ns-resize",
++  "nesw-resize",
++  "nwse-resize",
++  "nesw-rotate",
++  "nwse-rotate",
++  "swne-rotate",
++  "senw-rotate",
++  "zoom-in",
++  "zoom-out"
++]);
++var cursorTypeValidator = import_validate13.T.setEnum(TL_CURSOR_TYPES);
++var cursorValidator = import_validate13.T.object({
++  type: cursorTypeValidator,
++  rotation: import_validate13.T.number
++});
++
++// src/misc/TLScribble.ts
++var import_validate15 = require("@tldraw/validate");
++
++// src/misc/TLColor.ts
++var import_validate14 = require("@tldraw/validate");
++var TL_CANVAS_UI_COLOR_TYPES = /* @__PURE__ */ new Set([
++  "accent",
++  "white",
++  "black",
++  "selection-stroke",
++  "selection-fill",
++  "laser",
++  "muted-1"
++]);
++var canvasUiColorTypeValidator = import_validate14.T.setEnum(TL_CANVAS_UI_COLOR_TYPES);
++
++// src/misc/TLScribble.ts
++var TL_SCRIBBLE_STATES = /* @__PURE__ */ new Set(["starting", "paused", "active", "stopping"]);
++var scribbleValidator = import_validate15.T.object({
++  id: import_validate15.T.string,
++  points: import_validate15.T.arrayOf(vecModelValidator),
++  size: import_validate15.T.positiveNumber,
++  color: canvasUiColorTypeValidator,
++  opacity: import_validate15.T.number,
++  state: import_validate15.T.setEnum(TL_SCRIBBLE_STATES),
++  delay: import_validate15.T.number,
++  shrink: import_validate15.T.number,
++  taper: import_validate15.T.boolean
++});
++
++// src/records/TLPage.ts
++var import_store6 = require("@tldraw/store");
++var import_validate16 = require("@tldraw/validate");
++var pageIdValidator = idValidator("page");
++var pageValidator = import_validate16.T.model(
++  "page",
++  import_validate16.T.object({
++    typeName: import_validate16.T.literal("page"),
++    id: pageIdValidator,
++    name: import_validate16.T.string,
++    index: import_validate16.T.indexKey,
++    meta: import_validate16.T.jsonValue
++  })
++);
++var pageVersions = (0, import_store6.createMigrationIds)("com.tldraw.page", {
++  AddMeta: 1
++});
++var pageMigrations = (0, import_store6.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.page",
++  recordType: "page",
++  sequence: [
++    {
++      id: pageVersions.AddMeta,
++      up: (record) => {
++        record.meta = {};
++      }
++    }
++  ]
++});
++var PageRecordType = (0, import_store6.createRecordType)("page", {
++  validator: pageValidator,
++  scope: "document"
++}).withDefaultProperties(() => ({
++  meta: {}
++}));
++function isPageId(id) {
++  return PageRecordType.isId(id);
++}
++
++// src/records/TLInstance.ts
++var shouldKeyBePreservedBetweenSessions = {
++  // This object defines keys that should be preserved across calls to loadSnapshot()
++  id: false,
++  // meta
++  typeName: false,
++  // meta
++  currentPageId: false,
++  // does not preserve because who knows if the page still exists
++  opacityForNextShape: false,
++  // does not preserve because it's a temporary state
++  stylesForNextShape: false,
++  // does not preserve because it's a temporary state
++  followingUserId: false,
++  // does not preserve because it's a temporary state
++  highlightedUserIds: false,
++  // does not preserve because it's a temporary state
++  brush: false,
++  // does not preserve because it's a temporary state
++  cursor: false,
++  // does not preserve because it's a temporary state
++  scribbles: false,
++  // does not preserve because it's a temporary state
++  isFocusMode: true,
++  // preserves because it's a user preference
++  isDebugMode: true,
++  // preserves because it's a user preference
++  isToolLocked: true,
++  // preserves because it's a user preference
++  exportBackground: true,
++  // preserves because it's a user preference
++  screenBounds: true,
++  // preserves because it's capturing the user's screen state
++  insets: true,
++  // preserves because it's capturing the user's screen state
++  zoomBrush: false,
++  // does not preserve because it's a temporary state
++  chatMessage: false,
++  // does not preserve because it's a temporary state
++  isChatting: false,
++  // does not preserve because it's a temporary state
++  isPenMode: false,
++  // does not preserve because it's a temporary state
++  isGridMode: true,
++  // preserves because it's a user preference
++  isFocused: true,
++  // preserves because obviously
++  devicePixelRatio: true,
++  // preserves because it captures the user's screen state
++  isCoarsePointer: true,
++  // preserves because it captures the user's screen state
++  isHoveringCanvas: false,
++  // does not preserve because it's a temporary state
++  openMenus: false,
++  // does not preserve because it's a temporary state
++  isChangingStyle: false,
++  // does not preserve because it's a temporary state
++  isReadonly: true,
++  // preserves because it's a config option
++  meta: false,
++  // does not preserve because who knows what's in there, leave it up to sdk users to save and reinstate
++  duplicateProps: false
++  //
++};
++function pluckPreservingValues(val) {
++  return val ? (0, import_utils4.filterEntries)(val, (key) => {
++    return shouldKeyBePreservedBetweenSessions[key];
++  }) : null;
++}
++var instanceIdValidator = idValidator("instance");
++function createInstanceRecordType(stylesById) {
++  const stylesForNextShapeValidators = {};
++  for (const [id, style] of stylesById) {
++    stylesForNextShapeValidators[id] = import_validate17.T.optional(style);
++  }
++  const instanceTypeValidator = import_validate17.T.model(
++    "instance",
++    import_validate17.T.object({
++      typeName: import_validate17.T.literal("instance"),
++      id: idValidator("instance"),
++      currentPageId: pageIdValidator,
++      followingUserId: import_validate17.T.string.nullable(),
++      brush: boxModelValidator.nullable(),
++      opacityForNextShape: opacityValidator,
++      stylesForNextShape: import_validate17.T.object(stylesForNextShapeValidators),
++      cursor: cursorValidator,
++      scribbles: import_validate17.T.arrayOf(scribbleValidator),
++      isFocusMode: import_validate17.T.boolean,
++      isDebugMode: import_validate17.T.boolean,
++      isToolLocked: import_validate17.T.boolean,
++      exportBackground: import_validate17.T.boolean,
++      screenBounds: boxModelValidator,
++      insets: import_validate17.T.arrayOf(import_validate17.T.boolean),
++      zoomBrush: boxModelValidator.nullable(),
++      isPenMode: import_validate17.T.boolean,
++      isGridMode: import_validate17.T.boolean,
++      chatMessage: import_validate17.T.string,
++      isChatting: import_validate17.T.boolean,
++      highlightedUserIds: import_validate17.T.arrayOf(import_validate17.T.string),
++      isFocused: import_validate17.T.boolean,
++      devicePixelRatio: import_validate17.T.number,
++      isCoarsePointer: import_validate17.T.boolean,
++      isHoveringCanvas: import_validate17.T.boolean.nullable(),
++      openMenus: import_validate17.T.arrayOf(import_validate17.T.string),
++      isChangingStyle: import_validate17.T.boolean,
++      isReadonly: import_validate17.T.boolean,
++      meta: import_validate17.T.jsonValue,
++      duplicateProps: import_validate17.T.object({
++        shapeIds: import_validate17.T.arrayOf(idValidator("shape")),
++        offset: import_validate17.T.object({
++          x: import_validate17.T.number,
++          y: import_validate17.T.number
++        })
++      }).nullable()
++    })
++  );
++  return (0, import_store7.createRecordType)("instance", {
++    validator: instanceTypeValidator,
++    scope: "session",
++    ephemeralKeys: {
++      currentPageId: false,
++      meta: false,
++      followingUserId: true,
++      opacityForNextShape: true,
++      stylesForNextShape: true,
++      brush: true,
++      cursor: true,
++      scribbles: true,
++      isFocusMode: true,
++      isDebugMode: true,
++      isToolLocked: true,
++      exportBackground: true,
++      screenBounds: true,
++      insets: true,
++      zoomBrush: true,
++      isPenMode: true,
++      isGridMode: true,
++      chatMessage: true,
++      isChatting: true,
++      highlightedUserIds: true,
++      isFocused: true,
++      devicePixelRatio: true,
++      isCoarsePointer: true,
++      isHoveringCanvas: true,
++      openMenus: true,
++      isChangingStyle: true,
++      isReadonly: true,
++      duplicateProps: true
++    }
++  }).withDefaultProperties(
++    () => ({
++      followingUserId: null,
++      opacityForNextShape: 1,
++      stylesForNextShape: {},
++      brush: null,
++      scribbles: [],
++      cursor: {
++        type: "default",
++        rotation: 0
++      },
++      isFocusMode: false,
++      exportBackground: false,
++      isDebugMode: false,
++      isToolLocked: false,
++      screenBounds: { x: 0, y: 0, w: 1080, h: 720 },
++      insets: [false, false, false, false],
++      zoomBrush: null,
++      isGridMode: false,
++      isPenMode: false,
++      chatMessage: "",
++      isChatting: false,
++      highlightedUserIds: [],
++      isFocused: false,
++      devicePixelRatio: typeof window === "undefined" ? 1 : window.devicePixelRatio,
++      isCoarsePointer: false,
++      isHoveringCanvas: null,
++      openMenus: [],
++      isChangingStyle: false,
++      isReadonly: false,
++      meta: {},
++      duplicateProps: null
++    })
++  );
++}
++var instanceVersions = (0, import_store7.createMigrationIds)("com.tldraw.instance", {
++  AddTransparentExportBgs: 1,
++  RemoveDialog: 2,
++  AddToolLockMode: 3,
++  RemoveExtraPropsForNextShape: 4,
++  AddLabelColor: 5,
++  AddFollowingUserId: 6,
++  RemoveAlignJustify: 7,
++  AddZoom: 8,
++  AddVerticalAlign: 9,
++  AddScribbleDelay: 10,
++  RemoveUserId: 11,
++  AddIsPenModeAndIsGridMode: 12,
++  HoistOpacity: 13,
++  AddChat: 14,
++  AddHighlightedUserIds: 15,
++  ReplacePropsForNextShapeWithStylesForNextShape: 16,
++  AddMeta: 17,
++  RemoveCursorColor: 18,
++  AddLonelyProperties: 19,
++  ReadOnlyReadonly: 20,
++  AddHoveringCanvas: 21,
++  AddScribbles: 22,
++  AddInset: 23,
++  AddDuplicateProps: 24,
++  RemoveCanMoveCamera: 25
++});
++var instanceMigrations = (0, import_store7.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.instance",
++  recordType: "instance",
++  sequence: [
++    {
++      id: instanceVersions.AddTransparentExportBgs,
++      up: (instance) => {
++        return { ...instance, exportBackground: true };
++      }
++    },
++    {
++      id: instanceVersions.RemoveDialog,
++      up: ({ dialog: _, ...instance }) => {
++        return instance;
++      }
++    },
++    {
++      id: instanceVersions.AddToolLockMode,
++      up: (instance) => {
++        return { ...instance, isToolLocked: false };
++      }
++    },
++    {
++      id: instanceVersions.RemoveExtraPropsForNextShape,
++      up: ({ propsForNextShape, ...instance }) => {
++        return {
++          ...instance,
++          propsForNextShape: Object.fromEntries(
++            Object.entries(propsForNextShape).filter(
++              ([key]) => [
++                "color",
++                "labelColor",
++                "dash",
++                "fill",
++                "size",
++                "font",
++                "align",
++                "verticalAlign",
++                "icon",
++                "geo",
++                "arrowheadStart",
++                "arrowheadEnd",
++                "spline"
++              ].includes(key)
++            )
++          )
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddLabelColor,
++      up: ({ propsForNextShape, ...instance }) => {
++        return {
++          ...instance,
++          propsForNextShape: {
++            ...propsForNextShape,
++            labelColor: "black"
++          }
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddFollowingUserId,
++      up: (instance) => {
++        return { ...instance, followingUserId: null };
++      }
++    },
++    {
++      id: instanceVersions.RemoveAlignJustify,
++      up: (instance) => {
++        let newAlign = instance.propsForNextShape.align;
++        if (newAlign === "justify") {
++          newAlign = "start";
++        }
++        return {
++          ...instance,
++          propsForNextShape: {
++            ...instance.propsForNextShape,
++            align: newAlign
++          }
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddZoom,
++      up: (instance) => {
++        return { ...instance, zoomBrush: null };
++      }
++    },
++    {
++      id: instanceVersions.AddVerticalAlign,
++      up: (instance) => {
++        return {
++          ...instance,
++          propsForNextShape: {
++            ...instance.propsForNextShape,
++            verticalAlign: "middle"
++          }
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddScribbleDelay,
++      up: (instance) => {
++        if (instance.scribble !== null) {
++          return { ...instance, scribble: { ...instance.scribble, delay: 0 } };
++        }
++        return { ...instance };
++      }
++    },
++    {
++      id: instanceVersions.RemoveUserId,
++      up: ({ userId: _, ...instance }) => {
++        return instance;
++      }
++    },
++    {
++      id: instanceVersions.AddIsPenModeAndIsGridMode,
++      up: (instance) => {
++        return { ...instance, isPenMode: false, isGridMode: false };
++      }
++    },
++    {
++      id: instanceVersions.HoistOpacity,
++      up: ({ propsForNextShape: { opacity, ...propsForNextShape }, ...instance }) => {
++        return { ...instance, opacityForNextShape: Number(opacity ?? "1"), propsForNextShape };
++      }
++    },
++    {
++      id: instanceVersions.AddChat,
++      up: (instance) => {
++        return { ...instance, chatMessage: "", isChatting: false };
++      }
++    },
++    {
++      id: instanceVersions.AddHighlightedUserIds,
++      up: (instance) => {
++        return { ...instance, highlightedUserIds: [] };
++      }
++    },
++    {
++      id: instanceVersions.ReplacePropsForNextShapeWithStylesForNextShape,
++      up: ({ propsForNextShape: _, ...instance }) => {
++        return { ...instance, stylesForNextShape: {} };
++      }
++    },
++    {
++      id: instanceVersions.AddMeta,
++      up: (record) => {
++        return {
++          ...record,
++          meta: {}
++        };
++      }
++    },
++    {
++      id: instanceVersions.RemoveCursorColor,
++      up: (record) => {
++        const { color: _, ...cursor } = record.cursor;
++        return {
++          ...record,
++          cursor
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddLonelyProperties,
++      up: (record) => {
++        return {
++          ...record,
++          canMoveCamera: true,
++          isFocused: false,
++          devicePixelRatio: 1,
++          isCoarsePointer: false,
++          openMenus: [],
++          isChangingStyle: false,
++          isReadOnly: false
++        };
++      }
++    },
++    {
++      id: instanceVersions.ReadOnlyReadonly,
++      up: ({ isReadOnly: _isReadOnly, ...record }) => {
++        return {
++          ...record,
++          isReadonly: _isReadOnly
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddHoveringCanvas,
++      up: (record) => {
++        return {
++          ...record,
++          isHoveringCanvas: null
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddScribbles,
++      up: ({ scribble: _, ...record }) => {
++        return {
++          ...record,
++          scribbles: []
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddInset,
++      up: (record) => {
++        return {
++          ...record,
++          insets: [false, false, false, false]
++        };
++      },
++      down: ({ insets: _, ...record }) => {
++        return {
++          ...record
++        };
++      }
++    },
++    {
++      id: instanceVersions.AddDuplicateProps,
++      up: (record) => {
++        return {
++          ...record,
++          duplicateProps: null
++        };
++      },
++      down: ({ duplicateProps: _, ...record }) => {
++        return {
++          ...record
++        };
++      }
++    },
++    {
++      id: instanceVersions.RemoveCanMoveCamera,
++      up: ({ canMoveCamera: _, ...record }) => {
++        return {
++          ...record
++        };
++      },
++      down: (instance) => {
++        return { ...instance, canMoveCamera: true };
++      }
++    }
++  ]
++});
++var TLINSTANCE_ID = "instance:instance";
++
++// src/records/TLPageState.ts
++var import_store8 = require("@tldraw/store");
++var import_validate18 = require("@tldraw/validate");
++var instancePageStateValidator = import_validate18.T.model(
++  "instance_page_state",
++  import_validate18.T.object({
++    typeName: import_validate18.T.literal("instance_page_state"),
++    id: idValidator("instance_page_state"),
++    pageId: pageIdValidator,
++    selectedShapeIds: import_validate18.T.arrayOf(shapeIdValidator),
++    hintingShapeIds: import_validate18.T.arrayOf(shapeIdValidator),
++    erasingShapeIds: import_validate18.T.arrayOf(shapeIdValidator),
++    hoveredShapeId: shapeIdValidator.nullable(),
++    editingShapeId: shapeIdValidator.nullable(),
++    croppingShapeId: shapeIdValidator.nullable(),
++    focusedGroupId: shapeIdValidator.nullable(),
++    meta: import_validate18.T.jsonValue
++  })
++);
++var instancePageStateVersions = (0, import_store8.createMigrationIds)("com.tldraw.instance_page_state", {
++  AddCroppingId: 1,
++  RemoveInstanceIdAndCameraId: 2,
++  AddMeta: 3,
++  RenameProperties: 4,
++  RenamePropertiesAgain: 5
++});
++var instancePageStateMigrations = (0, import_store8.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.instance_page_state",
++  recordType: "instance_page_state",
++  sequence: [
++    {
++      id: instancePageStateVersions.AddCroppingId,
++      up(instance) {
++        instance.croppingShapeId = null;
++      }
++    },
++    {
++      id: instancePageStateVersions.RemoveInstanceIdAndCameraId,
++      up(instance) {
++        delete instance.instanceId;
++        delete instance.cameraId;
++      }
++    },
++    {
++      id: instancePageStateVersions.AddMeta,
++      up: (record) => {
++        record.meta = {};
++      }
++    },
++    {
++      id: instancePageStateVersions.RenameProperties,
++      // this migration is cursed: it was written wrong and doesn't do anything.
++      // rather than replace it, I've added another migration below that fixes it.
++      up: (_record) => {
++      },
++      down: (_record) => {
++      }
++    },
++    {
++      id: instancePageStateVersions.RenamePropertiesAgain,
++      up: (record) => {
++        record.selectedShapeIds = record.selectedIds;
++        delete record.selectedIds;
++        record.hintingShapeIds = record.hintingIds;
++        delete record.hintingIds;
++        record.erasingShapeIds = record.erasingIds;
++        delete record.erasingIds;
++        record.hoveredShapeId = record.hoveredId;
++        delete record.hoveredId;
++        record.editingShapeId = record.editingId;
++        delete record.editingId;
++        record.croppingShapeId = record.croppingShapeId ?? record.croppingId ?? null;
++        delete record.croppingId;
++        record.focusedGroupId = record.focusLayerId;
++        delete record.focusLayerId;
++      },
++      down: (record) => {
++        record.selectedIds = record.selectedShapeIds;
++        delete record.selectedShapeIds;
++        record.hintingIds = record.hintingShapeIds;
++        delete record.hintingShapeIds;
++        record.erasingIds = record.erasingShapeIds;
++        delete record.erasingShapeIds;
++        record.hoveredId = record.hoveredShapeId;
++        delete record.hoveredShapeId;
++        record.editingId = record.editingShapeId;
++        delete record.editingShapeId;
++        record.croppingId = record.croppingShapeId;
++        delete record.croppingShapeId;
++        record.focusLayerId = record.focusedGroupId;
++        delete record.focusedGroupId;
++      }
++    }
++  ]
++});
++var InstancePageStateRecordType = (0, import_store8.createRecordType)(
++  "instance_page_state",
++  {
++    validator: instancePageStateValidator,
++    scope: "session",
++    ephemeralKeys: {
++      pageId: false,
++      selectedShapeIds: false,
++      editingShapeId: false,
++      croppingShapeId: false,
++      meta: false,
++      hintingShapeIds: true,
++      erasingShapeIds: true,
++      hoveredShapeId: true,
++      focusedGroupId: true
++    }
++  }
++).withDefaultProperties(
++  () => ({
++    editingShapeId: null,
++    croppingShapeId: null,
++    selectedShapeIds: [],
++    hoveredShapeId: null,
++    erasingShapeIds: [],
++    hintingShapeIds: [],
++    focusedGroupId: null,
++    meta: {}
++  })
++);
++
++// src/records/TLPointer.ts
++var import_store9 = require("@tldraw/store");
++var import_validate19 = require("@tldraw/validate");
++var pointerValidator = import_validate19.T.model(
++  "pointer",
++  import_validate19.T.object({
++    typeName: import_validate19.T.literal("pointer"),
++    id: idValidator("pointer"),
++    x: import_validate19.T.number,
++    y: import_validate19.T.number,
++    lastActivityTimestamp: import_validate19.T.number,
++    meta: import_validate19.T.jsonValue
++  })
++);
++var pointerVersions = (0, import_store9.createMigrationIds)("com.tldraw.pointer", {
++  AddMeta: 1
++});
++var pointerMigrations = (0, import_store9.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.pointer",
++  recordType: "pointer",
++  sequence: [
++    {
++      id: pointerVersions.AddMeta,
++      up: (record) => {
++        record.meta = {};
++      }
++    }
++  ]
++});
++var PointerRecordType = (0, import_store9.createRecordType)("pointer", {
++  validator: pointerValidator,
++  scope: "session"
++}).withDefaultProperties(
++  () => ({
++    x: 0,
++    y: 0,
++    lastActivityTimestamp: 0,
++    meta: {}
++  })
++);
++var TLPOINTER_ID = PointerRecordType.createId("pointer");
++
++// src/records/TLPresence.ts
++var import_store10 = require("@tldraw/store");
++var import_validate20 = require("@tldraw/validate");
++var instancePresenceValidator = import_validate20.T.model(
++  "instance_presence",
++  import_validate20.T.object({
++    typeName: import_validate20.T.literal("instance_presence"),
++    id: idValidator("instance_presence"),
++    userId: import_validate20.T.string,
++    userName: import_validate20.T.string,
++    lastActivityTimestamp: import_validate20.T.number.nullable(),
++    followingUserId: import_validate20.T.string.nullable(),
++    cursor: import_validate20.T.object({
++      x: import_validate20.T.number,
++      y: import_validate20.T.number,
++      type: cursorTypeValidator,
++      rotation: import_validate20.T.number
++    }).nullable(),
++    color: import_validate20.T.string,
++    camera: import_validate20.T.object({
++      x: import_validate20.T.number,
++      y: import_validate20.T.number,
++      z: import_validate20.T.number
++    }).nullable(),
++    screenBounds: boxModelValidator.nullable(),
++    selectedShapeIds: import_validate20.T.arrayOf(idValidator("shape")),
++    currentPageId: idValidator("page"),
++    brush: boxModelValidator.nullable(),
++    scribbles: import_validate20.T.arrayOf(scribbleValidator),
++    chatMessage: import_validate20.T.string,
++    meta: import_validate20.T.jsonValue
++  })
++);
++var instancePresenceVersions = (0, import_store10.createMigrationIds)("com.tldraw.instance_presence", {
++  AddScribbleDelay: 1,
++  RemoveInstanceId: 2,
++  AddChatMessage: 3,
++  AddMeta: 4,
++  RenameSelectedShapeIds: 5,
++  NullableCameraCursor: 6
++});
++var instancePresenceMigrations = (0, import_store10.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.instance_presence",
++  recordType: "instance_presence",
++  sequence: [
++    {
++      id: instancePresenceVersions.AddScribbleDelay,
++      up: (instance) => {
++        if (instance.scribble !== null) {
++          instance.scribble.delay = 0;
++        }
++      }
++    },
++    {
++      id: instancePresenceVersions.RemoveInstanceId,
++      up: (instance) => {
++        delete instance.instanceId;
++      }
++    },
++    {
++      id: instancePresenceVersions.AddChatMessage,
++      up: (instance) => {
++        instance.chatMessage = "";
++      }
++    },
++    {
++      id: instancePresenceVersions.AddMeta,
++      up: (record) => {
++        record.meta = {};
++      }
++    },
++    {
++      id: instancePresenceVersions.RenameSelectedShapeIds,
++      up: (_record) => {
++      }
++    },
++    {
++      id: instancePresenceVersions.NullableCameraCursor,
++      up: (_record) => {
++      },
++      down: (record) => {
++        if (record.camera === null) {
++          record.camera = { x: 0, y: 0, z: 1 };
++        }
++        if (record.lastActivityTimestamp === null) {
++          record.lastActivityTimestamp = 0;
++        }
++        if (record.cursor === null) {
++          record.cursor = { type: "default", x: 0, y: 0, rotation: 0 };
++        }
++        if (record.screenBounds === null) {
++          record.screenBounds = { x: 0, y: 0, w: 1, h: 1 };
++        }
++      }
++    }
++  ]
++});
++var InstancePresenceRecordType = (0, import_store10.createRecordType)(
++  "instance_presence",
++  {
++    validator: instancePresenceValidator,
++    scope: "presence"
++  }
++).withDefaultProperties(() => ({
++  lastActivityTimestamp: null,
++  followingUserId: null,
++  color: "#FF0000",
++  camera: null,
++  cursor: null,
++  screenBounds: null,
++  selectedShapeIds: [],
++  brush: null,
++  scribbles: [],
++  chatMessage: "",
++  meta: {}
++}));
++
++// src/createPresenceStateDerivation.ts
++function createPresenceStateDerivation($user, instanceId) {
++  return (store) => {
++    return (0, import_state.computed)("instancePresence", () => {
++      const user = $user.get();
++      if (!user)
++        return null;
++      const state = getDefaultUserPresence(store, user);
++      if (!state)
++        return null;
++      return InstancePresenceRecordType.create({
++        ...state,
++        id: instanceId ?? InstancePresenceRecordType.createId(store.id)
++      });
++    });
++  };
++}
++function getDefaultUserPresence(store, user) {
++  const instance = store.get(TLINSTANCE_ID);
++  const pageState = store.get(InstancePageStateRecordType.createId(instance?.currentPageId));
++  const camera = store.get(CameraRecordType.createId(instance?.currentPageId));
++  const pointer = store.get(TLPOINTER_ID);
++  if (!pageState || !instance || !camera || !pointer) {
++    return null;
++  }
++  return {
++    selectedShapeIds: pageState.selectedShapeIds,
++    brush: instance.brush,
++    scribbles: instance.scribbles,
++    userId: user.id,
++    userName: user.name ?? "",
++    followingUserId: instance.followingUserId,
++    camera: {
++      x: camera.x,
++      y: camera.y,
++      z: camera.z
++    },
++    color: user.color ?? "#FF0000",
++    currentPageId: instance.currentPageId,
++    cursor: {
++      x: pointer.x,
++      y: pointer.y,
++      rotation: instance.cursor.rotation,
++      type: instance.cursor.type
++    },
++    lastActivityTimestamp: pointer.lastActivityTimestamp,
++    screenBounds: instance.screenBounds,
++    chatMessage: instance.chatMessage,
++    meta: {}
++  };
++}
++
++// src/createTLSchema.ts
++var import_store17 = require("@tldraw/store");
++var import_utils9 = require("@tldraw/utils");
++
++// src/TLStore.ts
++var import_utils5 = require("@tldraw/utils");
++
++// src/records/TLDocument.ts
++var import_store11 = require("@tldraw/store");
++var import_validate21 = require("@tldraw/validate");
++var documentValidator = import_validate21.T.model(
++  "document",
++  import_validate21.T.object({
++    typeName: import_validate21.T.literal("document"),
++    id: import_validate21.T.literal("document:document"),
++    gridSize: import_validate21.T.number,
++    name: import_validate21.T.string,
++    meta: import_validate21.T.jsonValue
++  })
++);
++function isDocument(record) {
++  if (!record)
++    return false;
++  return record.typeName === "document";
++}
++var documentVersions = (0, import_store11.createMigrationIds)("com.tldraw.document", {
++  AddName: 1,
++  AddMeta: 2
++});
++var documentMigrations = (0, import_store11.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.document",
++  recordType: "document",
++  sequence: [
++    {
++      id: documentVersions.AddName,
++      up: (document) => {
++        ;
++        document.name = "";
++      },
++      down: (document) => {
++        delete document.name;
++      }
++    },
++    {
++      id: documentVersions.AddMeta,
++      up: (record) => {
++        ;
++        record.meta = {};
++      }
++    }
++  ]
++});
++var DocumentRecordType = (0, import_store11.createRecordType)("document", {
++  validator: documentValidator,
++  scope: "document"
++}).withDefaultProperties(
++  () => ({
++    gridSize: 10,
++    name: "",
++    meta: {}
++  })
+ );
++var TLDOCUMENT_ID = DocumentRecordType.createId("document");
++
++// src/TLStore.ts
++function sortByIndex(a, b) {
++  if (a.index < b.index) {
++    return -1;
++  } else if (a.index > b.index) {
++    return 1;
++  }
++  return 0;
++}
++function redactRecordForErrorReporting(record) {
++  if (record.typeName === "asset") {
++    if ("src" in record) {
++      record.src = "<redacted>";
++    }
++    if ("src" in record.props) {
++      record.props.src = "<redacted>";
++    }
++  }
++}
++function onValidationFailure({
++  error,
++  phase,
++  record,
++  recordBefore
++}) {
++  const isExistingValidationIssue = (
++    // if we're initializing the store for the first time, we should
++    // allow invalid records so people can load old buggy data:
++    phase === "initialize"
++  );
++  (0, import_utils5.annotateError)(error, {
++    tags: {
++      origin: "store.validateRecord",
++      storePhase: phase,
++      isExistingValidationIssue
++    },
++    extras: {
++      recordBefore: recordBefore ? redactRecordForErrorReporting((0, import_utils5.structuredClone)(recordBefore)) : void 0,
++      recordAfter: redactRecordForErrorReporting((0, import_utils5.structuredClone)(record))
++    }
++  });
++  throw error;
++}
++function getDefaultPages() {
++  return [
++    PageRecordType.create({
++      id: "page:page",
++      name: "Page 1",
++      index: "a1",
++      meta: {}
++    })
++  ];
++}
++function createIntegrityChecker(store) {
++  const $pageIds = store.query.ids("page");
++  const $pageStates = store.query.records("instance_page_state");
++  const ensureStoreIsUsable = () => {
++    if (!store.has(TLDOCUMENT_ID)) {
++      store.put([DocumentRecordType.create({ id: TLDOCUMENT_ID, name: store.props.defaultName })]);
++      return ensureStoreIsUsable();
++    }
++    if (!store.has(TLPOINTER_ID)) {
++      store.put([PointerRecordType.create({ id: TLPOINTER_ID })]);
++      return ensureStoreIsUsable();
++    }
++    const pageIds = $pageIds.get();
++    if (pageIds.size === 0) {
++      store.put(getDefaultPages());
++      return ensureStoreIsUsable();
++    }
++    const getFirstPageId = () => [...pageIds].map((id) => store.get(id)).sort(sortByIndex)[0].id;
++    const instanceState = store.get(TLINSTANCE_ID);
++    if (!instanceState) {
++      store.put([
++        store.schema.types.instance.create({
++          id: TLINSTANCE_ID,
++          currentPageId: getFirstPageId(),
++          exportBackground: true
++        })
++      ]);
++      return ensureStoreIsUsable();
++    } else if (!pageIds.has(instanceState.currentPageId)) {
++      store.put([{ ...instanceState, currentPageId: getFirstPageId() }]);
++      return ensureStoreIsUsable();
++    }
++    const missingPageStateIds = /* @__PURE__ */ new Set();
++    const missingCameraIds = /* @__PURE__ */ new Set();
++    for (const id of pageIds) {
++      const pageStateId = InstancePageStateRecordType.createId(id);
++      const pageState = store.get(pageStateId);
++      if (!pageState) {
++        missingPageStateIds.add(pageStateId);
++      }
++      const cameraId = CameraRecordType.createId(id);
++      if (!store.has(cameraId)) {
++        missingCameraIds.add(cameraId);
++      }
++    }
++    if (missingPageStateIds.size > 0) {
++      store.put(
++        [...missingPageStateIds].map(
++          (id) => InstancePageStateRecordType.create({
++            id,
++            pageId: InstancePageStateRecordType.parseId(id)
++          })
++        )
++      );
++    }
++    if (missingCameraIds.size > 0) {
++      store.put([...missingCameraIds].map((id) => CameraRecordType.create({ id })));
++    }
++    const pageStates = $pageStates.get();
++    for (const pageState of pageStates) {
++      if (!pageIds.has(pageState.pageId)) {
++        store.remove([pageState.id]);
++        continue;
++      }
++      if (pageState.croppingShapeId && !store.has(pageState.croppingShapeId)) {
++        store.put([{ ...pageState, croppingShapeId: null }]);
++        return ensureStoreIsUsable();
++      }
++      if (pageState.focusedGroupId && !store.has(pageState.focusedGroupId)) {
++        store.put([{ ...pageState, focusedGroupId: null }]);
++        return ensureStoreIsUsable();
++      }
++      if (pageState.hoveredShapeId && !store.has(pageState.hoveredShapeId)) {
++        store.put([{ ...pageState, hoveredShapeId: null }]);
++        return ensureStoreIsUsable();
++      }
++      const filteredSelectedIds = pageState.selectedShapeIds.filter((id) => store.has(id));
++      if (filteredSelectedIds.length !== pageState.selectedShapeIds.length) {
++        store.put([{ ...pageState, selectedShapeIds: filteredSelectedIds }]);
++        return ensureStoreIsUsable();
++      }
++      const filteredHintingIds = pageState.hintingShapeIds.filter((id) => store.has(id));
++      if (filteredHintingIds.length !== pageState.hintingShapeIds.length) {
++        store.put([{ ...pageState, hintingShapeIds: filteredHintingIds }]);
++        return ensureStoreIsUsable();
++      }
++      const filteredErasingIds = pageState.erasingShapeIds.filter((id) => store.has(id));
++      if (filteredErasingIds.length !== pageState.erasingShapeIds.length) {
++        store.put([{ ...pageState, erasingShapeIds: filteredErasingIds }]);
++        return ensureStoreIsUsable();
++      }
++    }
++  };
++  return ensureStoreIsUsable;
++}
++
++// src/assets/TLBookmarkAsset.ts
++var import_store12 = require("@tldraw/store");
++var import_validate22 = require("@tldraw/validate");
++var bookmarkAssetValidator = createAssetValidator(
++  "bookmark",
++  import_validate22.T.object({
++    title: import_validate22.T.string,
++    description: import_validate22.T.string,
++    image: import_validate22.T.string,
++    favicon: import_validate22.T.string,
++    src: import_validate22.T.srcUrl.nullable()
++  })
++);
++var Versions = (0, import_store12.createMigrationIds)("com.tldraw.asset.bookmark", {
++  MakeUrlsValid: 1,
++  AddFavicon: 2
++});
++var bookmarkAssetMigrations = (0, import_store12.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.asset.bookmark",
++  recordType: "asset",
++  filter: (asset) => asset.type === "bookmark",
++  sequence: [
++    {
++      id: Versions.MakeUrlsValid,
++      up: (asset) => {
++        if (!import_validate22.T.srcUrl.isValid(asset.props.src)) {
++          asset.props.src = "";
++        }
++      },
++      down: (_asset) => {
++      }
++    },
++    {
++      id: Versions.AddFavicon,
++      up: (asset) => {
++        if (!import_validate22.T.srcUrl.isValid(asset.props.favicon)) {
++          asset.props.favicon = "";
++        }
++      },
++      down: (asset) => {
++        delete asset.props.favicon;
++      }
++    }
++  ]
++});
++
++// src/assets/TLImageAsset.ts
++var import_store13 = require("@tldraw/store");
++var import_validate23 = require("@tldraw/validate");
++var imageAssetValidator = createAssetValidator(
++  "image",
++  import_validate23.T.object({
++    w: import_validate23.T.number,
++    h: import_validate23.T.number,
++    name: import_validate23.T.string,
++    isAnimated: import_validate23.T.boolean,
++    mimeType: import_validate23.T.string.nullable(),
++    src: import_validate23.T.srcUrl.nullable(),
++    fileSize: import_validate23.T.nonZeroNumber.optional()
++  })
++);
++var Versions2 = (0, import_store13.createMigrationIds)("com.tldraw.asset.image", {
++  AddIsAnimated: 1,
++  RenameWidthHeight: 2,
++  MakeUrlsValid: 3,
++  AddFileSize: 4,
++  MakeFileSizeOptional: 5
++});
++var imageAssetMigrations = (0, import_store13.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.asset.image",
++  recordType: "asset",
++  filter: (asset) => asset.type === "image",
++  sequence: [
++    {
++      id: Versions2.AddIsAnimated,
++      up: (asset) => {
++        asset.props.isAnimated = false;
++      },
++      down: (asset) => {
++        delete asset.props.isAnimated;
++      }
++    },
++    {
++      id: Versions2.RenameWidthHeight,
++      up: (asset) => {
++        asset.props.w = asset.props.width;
++        asset.props.h = asset.props.height;
++        delete asset.props.width;
++        delete asset.props.height;
++      },
++      down: (asset) => {
++        asset.props.width = asset.props.w;
++        asset.props.height = asset.props.h;
++        delete asset.props.w;
++        delete asset.props.h;
++      }
++    },
++    {
++      id: Versions2.MakeUrlsValid,
++      up: (asset) => {
++        if (!import_validate23.T.srcUrl.isValid(asset.props.src)) {
++          asset.props.src = "";
++        }
++      },
++      down: (_asset) => {
++      }
++    },
++    {
++      id: Versions2.AddFileSize,
++      up: (asset) => {
++        asset.props.fileSize = -1;
++      },
++      down: (asset) => {
++        delete asset.props.fileSize;
++      }
++    },
++    {
++      id: Versions2.MakeFileSizeOptional,
++      up: (asset) => {
++        if (asset.props.fileSize === -1) {
++          asset.props.fileSize = void 0;
++        }
++      },
++      down: (asset) => {
++        if (asset.props.fileSize === void 0) {
++          asset.props.fileSize = -1;
++        }
++      }
++    }
++  ]
++});
++
++// src/assets/TLVideoAsset.ts
++var import_store14 = require("@tldraw/store");
++var import_validate24 = require("@tldraw/validate");
++var videoAssetValidator = createAssetValidator(
++  "video",
++  import_validate24.T.object({
++    w: import_validate24.T.number,
++    h: import_validate24.T.number,
++    name: import_validate24.T.string,
++    isAnimated: import_validate24.T.boolean,
++    mimeType: import_validate24.T.string.nullable(),
++    src: import_validate24.T.srcUrl.nullable(),
++    fileSize: import_validate24.T.number.optional()
++  })
++);
++var Versions3 = (0, import_store14.createMigrationIds)("com.tldraw.asset.video", {
++  AddIsAnimated: 1,
++  RenameWidthHeight: 2,
++  MakeUrlsValid: 3,
++  AddFileSize: 4,
++  MakeFileSizeOptional: 5
++});
++var videoAssetMigrations = (0, import_store14.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.asset.video",
++  recordType: "asset",
++  filter: (asset) => asset.type === "video",
++  sequence: [
++    {
++      id: Versions3.AddIsAnimated,
++      up: (asset) => {
++        asset.props.isAnimated = false;
++      },
++      down: (asset) => {
++        delete asset.props.isAnimated;
++      }
++    },
++    {
++      id: Versions3.RenameWidthHeight,
++      up: (asset) => {
++        asset.props.w = asset.props.width;
++        asset.props.h = asset.props.height;
++        delete asset.props.width;
++        delete asset.props.height;
++      },
++      down: (asset) => {
++        asset.props.width = asset.props.w;
++        asset.props.height = asset.props.h;
++        delete asset.props.w;
++        delete asset.props.h;
++      }
++    },
++    {
++      id: Versions3.MakeUrlsValid,
++      up: (asset) => {
++        if (!import_validate24.T.srcUrl.isValid(asset.props.src)) {
++          asset.props.src = "";
++        }
++      },
++      down: (_asset) => {
++      }
++    },
++    {
++      id: Versions3.AddFileSize,
++      up: (asset) => {
++        asset.props.fileSize = -1;
++      },
++      down: (asset) => {
++        delete asset.props.fileSize;
++      }
++    },
++    {
++      id: Versions3.MakeFileSizeOptional,
++      up: (asset) => {
++        if (asset.props.fileSize === -1) {
++          asset.props.fileSize = void 0;
++        }
++      },
++      down: (asset) => {
++        if (asset.props.fileSize === void 0) {
++          asset.props.fileSize = -1;
++        }
++      }
++    }
++  ]
++});
++
++// src/records/TLAsset.ts
++var import_store15 = require("@tldraw/store");
++var import_validate25 = require("@tldraw/validate");
++var assetValidator = import_validate25.T.model(
++  "asset",
++  import_validate25.T.union("type", {
++    image: imageAssetValidator,
++    video: videoAssetValidator,
++    bookmark: bookmarkAssetValidator
++  })
++);
++var assetVersions = (0, import_store15.createMigrationIds)("com.tldraw.asset", {
++  AddMeta: 1
++});
++var assetMigrations = (0, import_store15.createRecordMigrationSequence)({
++  sequenceId: "com.tldraw.asset",
++  recordType: "asset",
++  sequence: [
++    {
++      id: assetVersions.AddMeta,
++      up: (record) => {
++        ;
++        record.meta = {};
++      }
++    }
++  ]
++});
++var AssetRecordType = (0, import_store15.createRecordType)("asset", {
++  validator: assetValidator,
++  scope: "document"
++}).withDefaultProperties(() => ({
++  meta: {}
++}));
++
++// src/shapes/TLBookmarkShape.ts
++var import_validate26 = require("@tldraw/validate");
++var bookmarkShapeProps = {
++  w: import_validate26.T.nonZeroNumber,
++  h: import_validate26.T.nonZeroNumber,
++  assetId: assetIdValidator.nullable(),
++  url: import_validate26.T.linkUrl
++};
++var Versions4 = createShapePropsMigrationIds("bookmark", {
++  NullAssetId: 1,
++  MakeUrlsValid: 2
++});
++var bookmarkShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions4.NullAssetId,
++      up: (props) => {
++        if (props.assetId === void 0) {
++          props.assetId = null;
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: Versions4.MakeUrlsValid,
++      up: (props) => {
++        if (!import_validate26.T.linkUrl.isValid(props.url)) {
++          props.url = "";
++        }
++      },
++      down: (_props) => {
++      }
++    }
++  ]
++});
++
++// src/shapes/TLDrawShape.ts
++var import_validate27 = require("@tldraw/validate");
++var DrawShapeSegment = import_validate27.T.object({
++  type: import_validate27.T.literalEnum("free", "straight"),
++  points: import_validate27.T.arrayOf(vecModelValidator)
++});
++var drawShapeProps = {
++  color: DefaultColorStyle,
++  fill: DefaultFillStyle,
++  dash: DefaultDashStyle,
++  size: DefaultSizeStyle,
++  segments: import_validate27.T.arrayOf(DrawShapeSegment),
++  isComplete: import_validate27.T.boolean,
++  isClosed: import_validate27.T.boolean,
++  isPen: import_validate27.T.boolean,
++  scale: import_validate27.T.nonZeroNumber
++};
++var Versions5 = createShapePropsMigrationIds("draw", {
++  AddInPen: 1,
++  AddScale: 2
++});
++var drawShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions5.AddInPen,
++      up: (props) => {
++        const { points } = props.segments[0];
++        if (points.length === 0) {
++          props.isPen = false;
++          return;
++        }
++        let isPen = !(points[0].z === 0 || points[0].z === 0.5);
++        if (points[1]) {
++          isPen = isPen && !(points[1].z === 0 || points[1].z === 0.5);
++        }
++        props.isPen = isPen;
++      },
++      down: "retired"
++    },
++    {
++      id: Versions5.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    }
++  ]
++});
++
++// src/shapes/TLEmbedShape.ts
++var import_utils6 = require("@tldraw/utils");
++var import_validate28 = require("@tldraw/validate");
++var TLDRAW_APP_RE = /(^\/r\/[^/]+\/?$)/;
++var EMBED_DEFINITIONS = [
++  {
++    hostnames: ["beta.tldraw.com", "tldraw.com", "localhost:3000"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(TLDRAW_APP_RE)) {
++        return url;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["figma.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/^\/embed\/?$/)) {
++        const outUrl = urlObj.searchParams.get("url");
++        if (outUrl) {
++          return outUrl;
++        }
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["google.*"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (!urlObj)
++        return;
++      const matches = urlObj.pathname.match(/^\/maps\/embed\/v1\/view\/?$/);
++      if (matches && urlObj.searchParams.has("center") && urlObj.searchParams.get("zoom")) {
++        const zoom = urlObj.searchParams.get("zoom");
++        const [lat, lon] = urlObj.searchParams.get("center").split(",");
++        return `https://www.google.com/maps/@${lat},${lon},${zoom}z`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["val.town"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      const matches = urlObj && urlObj.pathname.match(/\/embed\/(.+)\/?/);
++      if (matches) {
++        return `https://www.val.town/v/${matches[1]}`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["codesandbox.io"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      const matches = urlObj && urlObj.pathname.match(/\/embed\/([^/]+)\/?/);
++      if (matches) {
++        return `https://codesandbox.io/s/${matches[1]}`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["codepen.io"],
++    fromEmbedUrl: (url) => {
++      const CODEPEN_EMBED_REGEXP = /https:\/\/codepen.io\/([^/]+)\/embed\/([^/]+)/;
++      const matches = url.match(CODEPEN_EMBED_REGEXP);
++      if (matches) {
++        const [_, user, id] = matches;
++        return `https://codepen.io/${user}/pen/${id}`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["scratch.mit.edu"],
++    fromEmbedUrl: (url) => {
++      const SCRATCH_EMBED_REGEXP = /https:\/\/scratch.mit.edu\/projects\/embed\/([^/]+)/;
++      const matches = url.match(SCRATCH_EMBED_REGEXP);
++      if (matches) {
++        const [_, id] = matches;
++        return `https://scratch.mit.edu/projects/${id}`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["*.youtube.com", "youtube.com", "youtu.be"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (!urlObj)
++        return;
++      const hostname = urlObj.hostname.replace(/^www./, "");
++      if (hostname === "youtube.com") {
++        const matches = urlObj.pathname.match(/^\/embed\/([^/]+)\/?/);
++        if (matches) {
++          return `https://www.youtube.com/watch?v=${matches[1]}`;
++        }
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["calendar.google.*"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      const srcQs = urlObj?.searchParams.get("src");
++      if (urlObj?.pathname.match(/\/calendar\/embed/) && srcQs) {
++        urlObj.pathname = "/calendar/u/0";
++        const keys = Array.from(urlObj.searchParams.keys());
++        for (const key of keys) {
++          urlObj.searchParams.delete(key);
++        }
++        urlObj.searchParams.set("cid", srcQs);
++        return urlObj.href;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["docs.google.*"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj?.pathname.match(/^\/presentation/) && urlObj?.pathname.match(/\/embed\/?$/)) {
++        urlObj.pathname = urlObj.pathname.replace(/\/embed$/, "/pub");
++        const keys = Array.from(urlObj.searchParams.keys());
++        for (const key of keys) {
++          urlObj.searchParams.delete(key);
++        }
++        return urlObj.href;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["gist.github.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/\/([^/]+)\/([^/]+)/)) {
++        if (!url.split("/").pop())
++          return;
++        return url;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["replit.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/\/@([^/]+)\/([^/]+)/) && urlObj.searchParams.has("embed")) {
++        urlObj.searchParams.delete("embed");
++        return urlObj.href;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["felt.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/^\/embed\/map\//)) {
++        urlObj.pathname = urlObj.pathname.replace(/^\/embed/, "");
++        return urlObj.href;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["open.spotify.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/^\/embed\/(artist|album)\//)) {
++        return urlObj.origin + urlObj.pathname.replace(/^\/embed/, "");
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["vimeo.com", "player.vimeo.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.hostname === "player.vimeo.com") {
++        const matches = urlObj.pathname.match(/^\/video\/([^/]+)\/?$/);
++        if (matches) {
++          return "https://vimeo.com/" + matches[1];
++        }
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["excalidraw.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.hash.match(/#room=/)) {
++        return url;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["observablehq.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.pathname.match(/^\/embed\/@([^/]+)\/([^/]+)\/?$/)) {
++        return `${urlObj.origin}${urlObj.pathname.replace("/embed", "")}#cell-*`;
++      }
++      if (urlObj && urlObj.pathname.match(/^\/embed\/([^/]+)\/?$/)) {
++        return `${urlObj.origin}${urlObj.pathname.replace("/embed", "/d")}#cell-*`;
++      }
++      return;
++    }
++  },
++  {
++    hostnames: ["desmos.com"],
++    fromEmbedUrl: (url) => {
++      const urlObj = (0, import_utils6.safeParseUrl)(url);
++      if (urlObj && urlObj.hostname === "www.desmos.com" && urlObj.pathname.match(/^\/calculator\/([^/]+)\/?$/) && urlObj.search === "?embed" && urlObj.hash === "") {
++        return url.replace("?embed", "");
++      }
++      return;
++    }
++  }
++];
++var embedShapeProps = {
++  w: import_validate28.T.nonZeroNumber,
++  h: import_validate28.T.nonZeroNumber,
++  url: import_validate28.T.string
++};
++var Versions6 = createShapePropsMigrationIds("embed", {
++  GenOriginalUrlInEmbed: 1,
++  RemoveDoesResize: 2,
++  RemoveTmpOldUrl: 3,
++  RemovePermissionOverrides: 4
++});
++var embedShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions6.GenOriginalUrlInEmbed,
++      // add tmpOldUrl property
++      up: (props) => {
++        try {
++          const url = props.url;
++          const host = new URL(url).host.replace("www.", "");
++          let originalUrl;
++          for (const localEmbedDef of EMBED_DEFINITIONS) {
++            if (localEmbedDef.hostnames.includes(host)) {
++              try {
++                originalUrl = localEmbedDef.fromEmbedUrl(url);
++              } catch (err) {
++                console.warn(err);
++              }
++            }
++          }
++          props.tmpOldUrl = props.url;
++          props.url = originalUrl ?? "";
++        } catch {
++          props.url = "";
++          props.tmpOldUrl = props.url;
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: Versions6.RemoveDoesResize,
++      up: (props) => {
++        delete props.doesResize;
++      },
++      down: "retired"
++    },
++    {
++      id: Versions6.RemoveTmpOldUrl,
++      up: (props) => {
++        delete props.tmpOldUrl;
++      },
++      down: "retired"
++    },
++    {
++      id: Versions6.RemovePermissionOverrides,
++      up: (props) => {
++        delete props.overridePermissions;
++      },
++      down: "retired"
++    }
++  ]
++});
++
++// src/shapes/TLFrameShape.ts
++var import_validate29 = require("@tldraw/validate");
++var frameShapeProps = {
++  w: import_validate29.T.nonZeroNumber,
++  h: import_validate29.T.nonZeroNumber,
++  name: import_validate29.T.string,
++  // because shape colors are an option, we don't want them to be picked up by the editor as a
++  // style prop by default, so instead of a proper style we just supply an equivalent validator.
++  // Check `FrameShapeUtil.configure` for how we replace this with the original
++  // `DefaultColorStyle` style when the option is turned on.
++  color: import_validate29.T.literalEnum(...DefaultColorStyle.values)
++};
++var Versions7 = createShapePropsMigrationIds("frame", {
++  AddColorProp: 1
++});
++var frameShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions7.AddColorProp,
++      up: (props) => {
++        props.color = "black";
++      },
++      down: (props) => {
++        delete props.color;
++      }
++    }
++  ]
++});
++
++// src/shapes/TLGeoShape.ts
++var import_validate31 = require("@tldraw/validate");
++
++// src/misc/TLRichText.ts
++var import_validate30 = require("@tldraw/validate");
++var richTextValidator = import_validate30.T.object({ type: import_validate30.T.string, content: import_validate30.T.arrayOf(import_validate30.T.unknown) });
++function toRichText(text) {
++  const lines = text.split("\n");
++  const content = lines.map((text2) => {
++    if (!text2) {
++      return {
++        type: "paragraph"
++      };
++    }
++    return {
++      type: "paragraph",
++      content: [{ type: "text", text: text2 }]
++    };
++  });
++  return {
++    type: "doc",
++    content
++  };
++}
++
++// src/styles/TLHorizontalAlignStyle.ts
++var DefaultHorizontalAlignStyle = StyleProp.defineEnum("tldraw:horizontalAlign", {
++  defaultValue: "middle",
++  values: ["start", "middle", "end", "start-legacy", "end-legacy", "middle-legacy"]
++});
++
++// src/styles/TLVerticalAlignStyle.ts
++var DefaultVerticalAlignStyle = StyleProp.defineEnum("tldraw:verticalAlign", {
++  defaultValue: "middle",
++  values: ["start", "middle", "end"]
++});
++
++// src/shapes/TLGeoShape.ts
++var GeoShapeGeoStyle = StyleProp.defineEnum("tldraw:geo", {
++  defaultValue: "rectangle",
++  values: [
++    "cloud",
++    "rectangle",
++    "ellipse",
++    "triangle",
++    "diamond",
++    "pentagon",
++    "hexagon",
++    "octagon",
++    "star",
++    "rhombus",
++    "rhombus-2",
++    "oval",
++    "trapezoid",
++    "arrow-right",
++    "arrow-left",
++    "arrow-up",
++    "arrow-down",
++    "x-box",
++    "check-box",
++    "heart"
++  ]
++});
++var geoShapeProps = {
++  geo: GeoShapeGeoStyle,
++  dash: DefaultDashStyle,
++  url: import_validate31.T.linkUrl,
++  w: import_validate31.T.nonZeroNumber,
++  h: import_validate31.T.nonZeroNumber,
++  growY: import_validate31.T.positiveNumber,
++  scale: import_validate31.T.nonZeroNumber,
++  // Text properties
++  labelColor: DefaultLabelColorStyle,
++  color: DefaultColorStyle,
++  fill: DefaultFillStyle,
++  size: DefaultSizeStyle,
++  font: DefaultFontStyle,
++  align: DefaultHorizontalAlignStyle,
++  verticalAlign: DefaultVerticalAlignStyle,
++  richText: richTextValidator
++};
++var geoShapeVersions = createShapePropsMigrationIds("geo", {
++  AddUrlProp: 1,
++  AddLabelColor: 2,
++  RemoveJustify: 3,
++  AddCheckBox: 4,
++  AddVerticalAlign: 5,
++  MigrateLegacyAlign: 6,
++  AddCloud: 7,
++  MakeUrlsValid: 8,
++  AddScale: 9,
++  AddRichText: 10
++});
++var geoShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: geoShapeVersions.AddUrlProp,
++      up: (props) => {
++        props.url = "";
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.AddLabelColor,
++      up: (props) => {
++        props.labelColor = "black";
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.RemoveJustify,
++      up: (props) => {
++        if (props.align === "justify") {
++          props.align = "start";
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.AddCheckBox,
++      up: (_props) => {
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.AddVerticalAlign,
++      up: (props) => {
++        props.verticalAlign = "middle";
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.MigrateLegacyAlign,
++      up: (props) => {
++        let newAlign;
++        switch (props.align) {
++          case "start":
++            newAlign = "start-legacy";
++            break;
++          case "end":
++            newAlign = "end-legacy";
++            break;
++          default:
++            newAlign = "middle-legacy";
++            break;
++        }
++        props.align = newAlign;
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.AddCloud,
++      up: (_props) => {
++      },
++      down: "retired"
++    },
++    {
++      id: geoShapeVersions.MakeUrlsValid,
++      up: (props) => {
++        if (!import_validate31.T.linkUrl.isValid(props.url)) {
++          props.url = "";
++        }
++      },
++      down: (_props) => {
++      }
++    },
++    {
++      id: geoShapeVersions.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    },
++    {
++      id: geoShapeVersions.AddRichText,
++      up: (props) => {
++        props.richText = toRichText(props.text);
++        delete props.text;
++      }
++      // N.B. Explicitly no down state so that we force clients to update.
++      // down: (props) => {
++      // 	delete props.richText
++      // },
++    }
++  ]
++});
++
++// src/shapes/TLGroupShape.ts
++var groupShapeProps = {};
++var groupShapeMigrations = createShapePropsMigrationSequence({ sequence: [] });
++
++// src/shapes/TLHighlightShape.ts
++var import_validate32 = require("@tldraw/validate");
++var highlightShapeProps = {
++  color: DefaultColorStyle,
++  size: DefaultSizeStyle,
++  segments: import_validate32.T.arrayOf(DrawShapeSegment),
++  isComplete: import_validate32.T.boolean,
++  isPen: import_validate32.T.boolean,
++  scale: import_validate32.T.nonZeroNumber
++};
++var Versions8 = createShapePropsMigrationIds("highlight", {
++  AddScale: 1
++});
++var highlightShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions8.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    }
++  ]
++});
++
++// src/shapes/TLImageShape.ts
++var import_validate33 = require("@tldraw/validate");
++var ImageShapeCrop = import_validate33.T.object({
++  topLeft: vecModelValidator,
++  bottomRight: vecModelValidator,
++  isCircle: import_validate33.T.boolean.optional()
++});
++var imageShapeProps = {
++  w: import_validate33.T.nonZeroNumber,
++  h: import_validate33.T.nonZeroNumber,
++  playing: import_validate33.T.boolean,
++  url: import_validate33.T.linkUrl,
++  assetId: assetIdValidator.nullable(),
++  crop: ImageShapeCrop.nullable(),
++  flipX: import_validate33.T.boolean,
++  flipY: import_validate33.T.boolean,
++  altText: import_validate33.T.string
++};
++var Versions9 = createShapePropsMigrationIds("image", {
++  AddUrlProp: 1,
++  AddCropProp: 2,
++  MakeUrlsValid: 3,
++  AddFlipProps: 4,
++  AddAltText: 5
++});
++var imageShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions9.AddUrlProp,
++      up: (props) => {
++        props.url = "";
++      },
++      down: "retired"
++    },
++    {
++      id: Versions9.AddCropProp,
++      up: (props) => {
++        props.crop = null;
++      },
++      down: (props) => {
++        delete props.crop;
++      }
++    },
++    {
++      id: Versions9.MakeUrlsValid,
++      up: (props) => {
++        if (!import_validate33.T.linkUrl.isValid(props.url)) {
++          props.url = "";
++        }
++      },
++      down: (_props) => {
++      }
++    },
++    {
++      id: Versions9.AddFlipProps,
++      up: (props) => {
++        props.flipX = false;
++        props.flipY = false;
++      },
++      down: (props) => {
++        delete props.flipX;
++        delete props.flipY;
++      }
++    },
++    {
++      id: Versions9.AddAltText,
++      up: (props) => {
++        props.altText = "";
++      },
++      down: (props) => {
++        delete props.altText;
++      }
++    }
++  ]
++});
++
++// src/shapes/TLLineShape.ts
++var import_utils7 = require("@tldraw/utils");
++var import_validate34 = require("@tldraw/validate");
++var LineShapeSplineStyle = StyleProp.defineEnum("tldraw:spline", {
++  defaultValue: "line",
++  values: ["cubic", "line"]
++});
++var lineShapePointValidator = import_validate34.T.object({
++  id: import_validate34.T.string,
++  index: import_validate34.T.indexKey,
++  x: import_validate34.T.number,
++  y: import_validate34.T.number
++});
++var lineShapeProps = {
++  color: DefaultColorStyle,
++  dash: DefaultDashStyle,
++  size: DefaultSizeStyle,
++  spline: LineShapeSplineStyle,
++  points: import_validate34.T.dict(import_validate34.T.string, lineShapePointValidator),
++  scale: import_validate34.T.nonZeroNumber
++};
++var lineShapeVersions = createShapePropsMigrationIds("line", {
++  AddSnapHandles: 1,
++  RemoveExtraHandleProps: 2,
++  HandlesToPoints: 3,
++  PointIndexIds: 4,
++  AddScale: 5
++});
++var lineShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: lineShapeVersions.AddSnapHandles,
++      up: (props) => {
++        for (const handle of Object.values(props.handles)) {
++          ;
++          handle.canSnap = true;
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: lineShapeVersions.RemoveExtraHandleProps,
++      up: (props) => {
++        props.handles = (0, import_utils7.objectMapFromEntries)(
++          Object.values(props.handles).map((handle) => [
++            handle.index,
++            {
++              x: handle.x,
++              y: handle.y
++            }
++          ])
++        );
++      },
++      down: (props) => {
++        const handles = Object.entries(props.handles).map(([index, handle]) => ({ index, ...handle })).sort(import_utils7.sortByIndex);
++        props.handles = Object.fromEntries(
++          handles.map((handle, i) => {
++            const id = i === 0 ? "start" : i === handles.length - 1 ? "end" : `handle:${handle.index}`;
++            return [
++              id,
++              {
++                id,
++                type: "vertex",
++                canBind: false,
++                canSnap: true,
++                index: handle.index,
++                x: handle.x,
++                y: handle.y
++              }
++            ];
++          })
++        );
++      }
++    },
++    {
++      id: lineShapeVersions.HandlesToPoints,
++      up: (props) => {
++        const sortedHandles = Object.entries(props.handles).map(([index, { x, y }]) => ({ x, y, index })).sort(import_utils7.sortByIndex);
++        props.points = sortedHandles.map(({ x, y }) => ({ x, y }));
++        delete props.handles;
++      },
++      down: (props) => {
++        const indices = (0, import_utils7.getIndices)(props.points.length);
++        props.handles = Object.fromEntries(
++          props.points.map((handle, i) => {
++            const index = indices[i];
++            return [
++              index,
++              {
++                x: handle.x,
++                y: handle.y
++              }
++            ];
++          })
++        );
++        delete props.points;
++      }
++    },
++    {
++      id: lineShapeVersions.PointIndexIds,
++      up: (props) => {
++        const indices = (0, import_utils7.getIndices)(props.points.length);
++        props.points = Object.fromEntries(
++          props.points.map((point, i) => {
++            const id = indices[i];
++            return [
++              id,
++              {
++                id,
++                index: id,
++                x: point.x,
++                y: point.y
++              }
++            ];
++          })
++        );
++      },
++      down: (props) => {
++        const sortedHandles = Object.values(props.points).sort(import_utils7.sortByIndex);
++        props.points = sortedHandles.map(({ x, y }) => ({ x, y }));
++      }
++    },
++    {
++      id: lineShapeVersions.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    }
++  ]
++});
++
++// src/shapes/TLNoteShape.ts
++var import_validate35 = require("@tldraw/validate");
++var noteShapeProps = {
++  color: DefaultColorStyle,
++  labelColor: DefaultLabelColorStyle,
++  size: DefaultSizeStyle,
++  font: DefaultFontStyle,
++  fontSizeAdjustment: import_validate35.T.positiveNumber,
++  align: DefaultHorizontalAlignStyle,
++  verticalAlign: DefaultVerticalAlignStyle,
++  growY: import_validate35.T.positiveNumber,
++  url: import_validate35.T.linkUrl,
++  richText: richTextValidator,
++  scale: import_validate35.T.nonZeroNumber
++};
++var Versions10 = createShapePropsMigrationIds("note", {
++  AddUrlProp: 1,
++  RemoveJustify: 2,
++  MigrateLegacyAlign: 3,
++  AddVerticalAlign: 4,
++  MakeUrlsValid: 5,
++  AddFontSizeAdjustment: 6,
++  AddScale: 7,
++  AddLabelColor: 8,
++  AddRichText: 9
++});
++var noteShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions10.AddUrlProp,
++      up: (props) => {
++        props.url = "";
++      },
++      down: "retired"
++    },
++    {
++      id: Versions10.RemoveJustify,
++      up: (props) => {
++        if (props.align === "justify") {
++          props.align = "start";
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: Versions10.MigrateLegacyAlign,
++      up: (props) => {
++        switch (props.align) {
++          case "start":
++            props.align = "start-legacy";
++            return;
++          case "end":
++            props.align = "end-legacy";
++            return;
++          default:
++            props.align = "middle-legacy";
++            return;
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: Versions10.AddVerticalAlign,
++      up: (props) => {
++        props.verticalAlign = "middle";
++      },
++      down: "retired"
++    },
++    {
++      id: Versions10.MakeUrlsValid,
++      up: (props) => {
++        if (!import_validate35.T.linkUrl.isValid(props.url)) {
++          props.url = "";
++        }
++      },
++      down: (_props) => {
++      }
++    },
++    {
++      id: Versions10.AddFontSizeAdjustment,
++      up: (props) => {
++        props.fontSizeAdjustment = 0;
++      },
++      down: (props) => {
++        delete props.fontSizeAdjustment;
++      }
++    },
++    {
++      id: Versions10.AddScale,
++      up: (props) => {
++        props.scale = 1;
++      },
++      down: (props) => {
++        delete props.scale;
++      }
++    },
++    {
++      id: Versions10.AddLabelColor,
++      up: (props) => {
++        props.labelColor = "black";
++      },
++      down: (props) => {
++        delete props.labelColor;
++      }
++    },
++    {
++      id: Versions10.AddRichText,
++      up: (props) => {
++        props.richText = toRichText(props.text);
++        delete props.text;
++      }
++      // N.B. Explicitly no down state so that we force clients to update.
++      // down: (props) => {
++      // 	delete props.richText
++      // },
++    }
++  ]
++});
++
++// src/shapes/TLTextShape.ts
++var import_validate36 = require("@tldraw/validate");
++
++// src/styles/TLTextAlignStyle.ts
++var DefaultTextAlignStyle = StyleProp.defineEnum("tldraw:textAlign", {
++  defaultValue: "start",
++  values: ["start", "middle", "end"]
++});
++
++// src/shapes/TLTextShape.ts
++var textShapeProps = {
++  color: DefaultColorStyle,
++  size: DefaultSizeStyle,
++  font: DefaultFontStyle,
++  textAlign: DefaultTextAlignStyle,
++  w: import_validate36.T.nonZeroNumber,
++  richText: richTextValidator,
++  scale: import_validate36.T.nonZeroNumber,
++  autoSize: import_validate36.T.boolean
++};
++var Versions11 = createShapePropsMigrationIds("text", {
++  RemoveJustify: 1,
++  AddTextAlign: 2,
++  AddRichText: 3
++});
++var textShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions11.RemoveJustify,
++      up: (props) => {
++        if (props.align === "justify") {
++          props.align = "start";
++        }
++      },
++      down: "retired"
++    },
++    {
++      id: Versions11.AddTextAlign,
++      up: (props) => {
++        props.textAlign = props.align;
++        delete props.align;
++      },
++      down: (props) => {
++        props.align = props.textAlign;
++        delete props.textAlign;
++      }
++    },
++    {
++      id: Versions11.AddRichText,
++      up: (props) => {
++        props.richText = toRichText(props.text);
++        delete props.text;
++      }
++      // N.B. Explicitly no down state so that we force clients to update.
++      // down: (props) => {
++      // 	delete props.richText
++      // },
++    }
++  ]
++});
++
++// src/shapes/TLVideoShape.ts
++var import_validate37 = require("@tldraw/validate");
++var videoShapeProps = {
++  w: import_validate37.T.nonZeroNumber,
++  h: import_validate37.T.nonZeroNumber,
++  time: import_validate37.T.number,
++  playing: import_validate37.T.boolean,
++  autoplay: import_validate37.T.boolean,
++  url: import_validate37.T.linkUrl,
++  assetId: assetIdValidator.nullable(),
++  altText: import_validate37.T.string
++};
++var Versions12 = createShapePropsMigrationIds("video", {
++  AddUrlProp: 1,
++  MakeUrlsValid: 2,
++  AddAltText: 3,
++  AddAutoplay: 4
++});
++var videoShapeMigrations = createShapePropsMigrationSequence({
++  sequence: [
++    {
++      id: Versions12.AddUrlProp,
++      up: (props) => {
++        props.url = "";
++      },
++      down: "retired"
++    },
++    {
++      id: Versions12.MakeUrlsValid,
++      up: (props) => {
++        if (!import_validate37.T.linkUrl.isValid(props.url)) {
++          props.url = "";
++        }
++      },
++      down: (_props) => {
++      }
++    },
++    {
++      id: Versions12.AddAltText,
++      up: (props) => {
++        props.altText = "";
++      },
++      down: (props) => {
++        delete props.altText;
++      }
++    },
++    {
++      id: Versions12.AddAutoplay,
++      up: (props) => {
++        props.autoplay = true;
++      },
++      down: (props) => {
++        delete props.autoplay;
++      }
++    }
++  ]
++});
++
++// src/store-migrations.ts
++var import_store16 = require("@tldraw/store");
++var import_utils8 = require("@tldraw/utils");
++var Versions13 = (0, import_store16.createMigrationIds)("com.tldraw.store", {
++  RemoveCodeAndIconShapeTypes: 1,
++  AddInstancePresenceType: 2,
++  RemoveTLUserAndPresenceAndAddPointer: 3,
++  RemoveUserDocument: 4
++});
++var storeMigrations = (0, import_store16.createMigrationSequence)({
++  sequenceId: "com.tldraw.store",
++  retroactive: false,
++  sequence: [
++    {
++      id: Versions13.RemoveCodeAndIconShapeTypes,
++      scope: "store",
++      up: (store) => {
++        for (const [id, record] of (0, import_utils8.objectMapEntries)(store)) {
++          if (record.typeName === "shape" && (record.type === "icon" || record.type === "code")) {
++            delete store[id];
++          }
++        }
++      }
++    },
++    {
++      id: Versions13.AddInstancePresenceType,
++      scope: "store",
++      up(_store) {
++      }
++    },
++    {
++      // remove user and presence records and add pointer records
++      id: Versions13.RemoveTLUserAndPresenceAndAddPointer,
++      scope: "store",
++      up: (store) => {
++        for (const [id, record] of (0, import_utils8.objectMapEntries)(store)) {
++          if (record.typeName.match(/^(user|user_presence)$/)) {
++            delete store[id];
++          }
++        }
++      }
++    },
++    {
++      // remove user document records
++      id: Versions13.RemoveUserDocument,
++      scope: "store",
++      up: (store) => {
++        for (const [id, record] of (0, import_utils8.objectMapEntries)(store)) {
++          if (record.typeName.match("user_document")) {
++            delete store[id];
++          }
++        }
++      }
++    }
++  ]
++});
++
++// src/createTLSchema.ts
++var defaultShapeSchemas = {
++  arrow: { migrations: arrowShapeMigrations, props: arrowShapeProps },
++  bookmark: { migrations: bookmarkShapeMigrations, props: bookmarkShapeProps },
++  draw: { migrations: drawShapeMigrations, props: drawShapeProps },
++  embed: { migrations: embedShapeMigrations, props: embedShapeProps },
++  frame: { migrations: frameShapeMigrations, props: frameShapeProps },
++  geo: { migrations: geoShapeMigrations, props: geoShapeProps },
++  group: { migrations: groupShapeMigrations, props: groupShapeProps },
++  highlight: { migrations: highlightShapeMigrations, props: highlightShapeProps },
++  image: { migrations: imageShapeMigrations, props: imageShapeProps },
++  line: { migrations: lineShapeMigrations, props: lineShapeProps },
++  note: { migrations: noteShapeMigrations, props: noteShapeProps },
++  text: { migrations: textShapeMigrations, props: textShapeProps },
++  video: { migrations: videoShapeMigrations, props: videoShapeProps }
++};
++var defaultBindingSchemas = {
++  arrow: { migrations: arrowBindingMigrations, props: arrowBindingProps }
++};
++function createTLSchema({
++  shapes = defaultShapeSchemas,
++  bindings = defaultBindingSchemas,
++  migrations
++} = {}) {
++  const stylesById = /* @__PURE__ */ new Map();
++  for (const shape of (0, import_utils9.objectMapValues)(shapes)) {
++    for (const style of getShapePropKeysByStyle(shape.props ?? {}).keys()) {
++      if (stylesById.has(style.id) && stylesById.get(style.id) !== style) {
++        throw new Error(`Multiple StyleProp instances with the same id: ${style.id}`);
++      }
++      stylesById.set(style.id, style);
++    }
++  }
++  const ShapeRecordType = createShapeRecordType(shapes);
++  const BindingRecordType = createBindingRecordType(bindings);
++  const InstanceRecordType = createInstanceRecordType(stylesById);
++  return import_store17.StoreSchema.create(
++    {
++      asset: AssetRecordType,
++      binding: BindingRecordType,
++      camera: CameraRecordType,
++      document: DocumentRecordType,
++      instance: InstanceRecordType,
++      instance_page_state: InstancePageStateRecordType,
++      page: PageRecordType,
++      instance_presence: InstancePresenceRecordType,
++      pointer: PointerRecordType,
++      shape: ShapeRecordType
++    },
++    {
++      migrations: [
++        storeMigrations,
++        assetMigrations,
++        cameraMigrations,
++        documentMigrations,
++        instanceMigrations,
++        instancePageStateMigrations,
++        pageMigrations,
++        instancePresenceMigrations,
++        pointerMigrations,
++        rootShapeMigrations,
++        bookmarkAssetMigrations,
++        imageAssetMigrations,
++        videoAssetMigrations,
++        ...processPropsMigrations("shape", shapes),
++        ...processPropsMigrations("binding", bindings),
++        ...migrations ?? []
++      ],
++      onValidationFailure,
++      createIntegrityChecker
++    }
++  );
++}
++
++// src/misc/TLHandle.ts
++var TL_HANDLE_TYPES = /* @__PURE__ */ new Set(["vertex", "virtual", "create", "clone"]);
++
++// src/translations/languages.ts
++var LANGUAGES = [
++  { locale: "id", label: "Bahasa Indonesia" },
++  { locale: "ms", label: "Bahasa Melayu" },
++  { locale: "ca", label: "Catal\xE0" },
++  { locale: "cs", label: "\u010Ce\u0161tina" },
++  { locale: "da", label: "Danish" },
++  { locale: "de", label: "Deutsch" },
++  { locale: "en", label: "English" },
++  { locale: "es", label: "Espa\xF1ol" },
++  { locale: "tl", label: "Filipino" },
++  { locale: "fr", label: "Fran\xE7ais" },
++  { locale: "gl", label: "Galego" },
++  { locale: "hr", label: "Hrvatski" },
++  { locale: "it", label: "Italiano" },
++  { locale: "hu", label: "Magyar" },
++  { locale: "nl", label: "Nederlands" },
++  { locale: "no", label: "Norwegian" },
++  { locale: "pl", label: "Polski" },
++  { locale: "pt-br", label: "Portugu\xEAs - Brasil" },
++  { locale: "pt-pt", label: "Portugu\xEAs - Europeu" },
++  { locale: "ro", label: "Rom\xE2n\u0103" },
++  { locale: "sl", label: "Sloven\u0161\u010Dina" },
++  { locale: "so", label: "Somali" },
++  { locale: "fi", label: "Suomi" },
++  { locale: "sv", label: "Svenska" },
++  { locale: "vi", label: "Ti\u1EBFng Vi\u1EC7t" },
++  { locale: "tr", label: "T\xFCrk\xE7e" },
++  { locale: "el", label: "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC" },
++  { locale: "ru", label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439" },
++  { locale: "uk", label: "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430" },
++  { locale: "he", label: "\u05E2\u05D1\u05E8\u05D9\u05EA" },
++  { locale: "ur", label: "\u0627\u0631\u062F\u0648" },
++  { locale: "ar", label: "\u0639\u0631\u0628\u064A" },
++  { locale: "fa", label: "\u0641\u0627\u0631\u0633\u06CC" },
++  { locale: "ne", label: "\u0928\u0947\u092A\u093E\u0932\u0940" },
++  { locale: "mr", label: "\u092E\u0930\u093E\u0920\u0940" },
++  { locale: "hi-in", label: "\u0939\u093F\u0928\u094D\u0926\u0940" },
++  { locale: "bn", label: "\u09AC\u09BE\u0982\u09B2\u09BE" },
++  { locale: "pa", label: "\u0A2A\u0A70\u0A1C\u0A3E\u0A2C\u0A40" },
++  { locale: "gu-in", label: "\u0A97\u0AC1\u0A9C\u0AB0\u0ABE\u0AA4\u0AC0" },
++  { locale: "ta", label: "\u0BA4\u0BAE\u0BBF\u0BB4\u0BCD" },
++  { locale: "te", label: "\u0C24\u0C46\u0C32\u0C41\u0C17\u0C41" },
++  { locale: "kn", label: "\u0C95\u0CA8\u0CCD\u0CA8\u0CA1" },
++  { locale: "ml", label: "\u0D2E\u0D32\u0D2F\u0D3E\u0D33\u0D02" },
++  { locale: "th", label: "\u0E20\u0E32\u0E29\u0E32\u0E44\u0E17\u0E22" },
++  { locale: "km-kh", label: "\u1797\u17B6\u179F\u17B6\u1781\u17D2\u1798\u17C2\u179A" },
++  { locale: "ko-kr", label: "\uD55C\uAD6D\uC5B4" },
++  { locale: "ja", label: "\u65E5\u672C\u8A9E" },
++  { locale: "zh-cn", label: "\u7B80\u4F53\u4E2D\u6587" },
++  { locale: "zh-tw", label: "\u7E41\u9AD4\u4E2D\u6587 (\u53F0\u7063)" }
++];
++
++// src/translations/translations.ts
++function getDefaultTranslationLocale() {
++  const locales = typeof window !== "undefined" ? window.navigator.languages ?? ["en"] : ["en"];
++  return _getDefaultTranslationLocale(locales);
++}
++function _getDefaultTranslationLocale(locales) {
++  for (const locale of locales) {
++    const supportedLocale = getSupportedLocale(locale);
++    if (supportedLocale) {
++      return supportedLocale;
++    }
++  }
++  return "en";
++}
++var DEFAULT_LOCALE_REGIONS = {
++  zh: "zh-cn",
++  pt: "pt-br",
++  ko: "ko-kr",
++  hi: "hi-in"
++};
++function getSupportedLocale(locale) {
++  const exactMatch = LANGUAGES.find((t) => t.locale === locale.toLowerCase());
++  if (exactMatch) {
++    return exactMatch.locale;
++  }
++  const [language, region] = locale.split(/[-_]/).map((s) => s.toLowerCase());
++  if (region) {
++    const languageMatch = LANGUAGES.find((t) => t.locale === language);
++    if (languageMatch) {
++      return languageMatch.locale;
++    }
++  }
++  if (language in DEFAULT_LOCALE_REGIONS) {
++    return DEFAULT_LOCALE_REGIONS[language];
++  }
++  return null;
++}
++
++// src/index.ts
++(0, import_utils10.registerTldrawLibraryVersion)(
++  globalThis.TLDRAW_LIBRARY_NAME,
++  globalThis.TLDRAW_LIBRARY_VERSION,
++  globalThis.TLDRAW_LIBRARY_MODULES
++);
++// Annotate the CommonJS export names for ESM import in node:
++0 && (module.exports = {
++  ArrowShapeArrowheadEndStyle,
++  ArrowShapeArrowheadStartStyle,
++  ArrowShapeKindStyle,
++  AssetRecordType,
++  CameraRecordType,
++  DefaultColorStyle,
++  DefaultColorThemePalette,
++  DefaultDashStyle,
++  DefaultFillStyle,
++  DefaultFontFamilies,
++  DefaultFontStyle,
++  DefaultHorizontalAlignStyle,
++  DefaultSizeStyle,
++  DefaultTextAlignStyle,
++  DefaultVerticalAlignStyle,
++  DocumentRecordType,
++  ElbowArrowSnap,
++  EnumStyleProp,
++  GeoShapeGeoStyle,
++  ImageShapeCrop,
++  InstancePageStateRecordType,
++  InstancePresenceRecordType,
++  LANGUAGES,
++  LineShapeSplineStyle,
++  PageRecordType,
++  PointerRecordType,
++  StyleProp,
++  TLDOCUMENT_ID,
++  TLINSTANCE_ID,
++  TLPOINTER_ID,
++  TL_CANVAS_UI_COLOR_TYPES,
++  TL_CURSOR_TYPES,
++  TL_HANDLE_TYPES,
++  TL_SCRIBBLE_STATES,
++  arrowBindingMigrations,
++  arrowBindingProps,
++  arrowBindingVersions,
++  arrowShapeMigrations,
++  arrowShapeProps,
++  arrowShapeVersions,
++  assetIdValidator,
++  assetMigrations,
++  assetValidator,
++  bindingIdValidator,
++  bookmarkShapeMigrations,
++  bookmarkShapeProps,
++  boxModelValidator,
++  canvasUiColorTypeValidator,
++  createAssetValidator,
++  createBindingId,
++  createBindingPropsMigrationIds,
++  createBindingPropsMigrationSequence,
++  createBindingValidator,
++  createPresenceStateDerivation,
++  createShapeId,
++  createShapePropsMigrationIds,
++  createShapePropsMigrationSequence,
++  createShapeValidator,
++  createTLSchema,
++  defaultBindingSchemas,
++  defaultColorNames,
++  defaultShapeSchemas,
++  drawShapeMigrations,
++  drawShapeProps,
++  embedShapeMigrations,
++  embedShapeProps,
++  frameShapeMigrations,
++  frameShapeProps,
++  geoShapeMigrations,
++  geoShapeProps,
++  getDefaultColorTheme,
++  getDefaultTranslationLocale,
++  getDefaultUserPresence,
++  getShapePropKeysByStyle,
++  groupShapeMigrations,
++  groupShapeProps,
++  highlightShapeMigrations,
++  highlightShapeProps,
++  idValidator,
++  imageShapeMigrations,
++  imageShapeProps,
++  isBinding,
++  isBindingId,
++  isDocument,
++  isPageId,
++  isShape,
++  isShapeId,
++  lineShapeMigrations,
++  lineShapeProps,
++  noteShapeMigrations,
++  noteShapeProps,
++  opacityValidator,
++  pageIdValidator,
++  parentIdValidator,
++  pluckPreservingValues,
++  richTextValidator,
++  rootBindingMigrations,
++  rootShapeMigrations,
++  scribbleValidator,
++  shapeIdValidator,
++  textShapeMigrations,
++  textShapeProps,
++  toRichText,
++  vecModelValidator,
++  videoShapeMigrations,
++  videoShapeProps
++});
+ //# sourceMappingURL=index.js.map
+diff --git a/dist-cjs/styles/TLColorStyle.js b/dist-cjs/styles/TLColorStyle.js
+index 18ece542a5988c6563cf8af80e987d73754c616e..bb871a8c8876a700f87d0308c8191e38a3453b47 100644
+--- a/dist-cjs/styles/TLColorStyle.js
++++ b/dist-cjs/styles/TLColorStyle.js
+@@ -28,616 +28,532 @@ module.exports = __toCommonJS(TLColorStyle_exports);
+ var import_StyleProp = require("./StyleProp");
+ const defaultColorNames = [
+   "black",
+-  "grey",
+-  "light-violet",
+-  "violet",
++  "lavender",
++  "pink",
++  "mauve",
+   "blue",
+-  "light-blue",
+-  "yellow",
+-  "orange",
++  "sky",
++  "teal",
+   "green",
+-  "light-green",
+-  "light-red",
+-  "red",
+-  "white"
++  "yellow",
++  "peach",
++  "maroon",
++  "red"
+ ];
+ const DefaultColorThemePalette = {
+   lightMode: {
+     id: "light",
+-    text: "#000000",
+-    background: "#f9fafb",
+-    solid: "#fcfffe",
++    text: "#4c4f69",
++    background: "#eff1f5",
++    solid: "#eff1f5",
+     black: {
+-      solid: "#1d1d1d",
+-      fill: "#1d1d1d",
++      solid: "#4c4f69",
++      fill: "#4c4f69",
++      semi: "#dde0f0",
++      pattern: "#5c5f77",
+       frame: {
+-        headingStroke: "#717171",
+-        headingFill: "#ffffff",
+-        stroke: "#717171",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#6c6f85",
++        headingFill: "#e6e9ef",
++        stroke: "#6c6f85",
++        fill: "#eff1f5",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FCE19C",
+-        text: "#000000"
++        fill: "#bcc0cc",
++        text: "#4c4f69"
+       },
+-      semi: "#e8e8e8",
+-      pattern: "#494949",
+       highlight: {
+-        srgb: "#fddd00",
+-        p3: "color(display-p3 0.972 0.8205 0.05)"
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
+       }
+     },
+-    blue: {
+-      solid: "#4465e9",
+-      fill: "#4465e9",
++    lavender: {
++      solid: "#7287fd",
++      fill: "#7287fd",
++      semi: "#dde3ff",
++      pattern: "#5b6de0",
+       frame: {
+-        headingStroke: "#6681ec",
+-        headingFill: "#f9fafe",
+-        stroke: "#6681ec",
+-        fill: "#f9fafe",
+-        text: "#000000"
++        headingStroke: "#8898fe",
++        headingFill: "#eef0ff",
++        stroke: "#8898fe",
++        fill: "#f5f6ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#8AA3FF",
+-        text: "#000000"
++        fill: "#c0c8ff",
++        text: "#4c4f69"
+       },
+-      semi: "#dce1f8",
+-      pattern: "#6681ee",
+       highlight: {
+-        srgb: "#10acff",
+-        p3: "color(display-p3 0.308 0.6632 0.9996)"
++        srgb: "#7287fd",
++        p3: "color(display-p3 0.447 0.529 0.992)"
+       }
+     },
+-    green: {
+-      solid: "#099268",
+-      fill: "#099268",
++    pink: {
++      solid: "#ea76cb",
++      fill: "#ea76cb",
++      semi: "#fae0f5",
++      pattern: "#df5dbc",
+       frame: {
+-        headingStroke: "#37a684",
+-        headingFill: "#f8fcfa",
+-        stroke: "#37a684",
+-        fill: "#f8fcfa",
+-        text: "#000000"
++        headingStroke: "#ed8ed3",
++        headingFill: "#fdf0fb",
++        stroke: "#ed8ed3",
++        fill: "#fef8fd",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#6FC896",
+-        text: "#000000"
++        fill: "#f4b8e4",
++        text: "#4c4f69"
+       },
+-      semi: "#d3e9e3",
+-      pattern: "#39a785",
+       highlight: {
+-        srgb: "#00ffc8",
+-        p3: "color(display-p3 0.2536 0.984 0.7981)"
++        srgb: "#ea76cb",
++        p3: "color(display-p3 0.918 0.463 0.796)"
+       }
+     },
+-    grey: {
+-      solid: "#9fa8b2",
+-      fill: "#9fa8b2",
++    mauve: {
++      solid: "#8839ef",
++      fill: "#8839ef",
++      semi: "#e8d5fc",
++      pattern: "#7325e0",
+       frame: {
+-        headingStroke: "#aaaaab",
+-        headingFill: "#fbfcfc",
+-        stroke: "#aaaaab",
+-        fill: "#fcfcfd",
+-        text: "#000000"
++        headingStroke: "#9b56f0",
++        headingFill: "#f5eefe",
++        stroke: "#9b56f0",
++        fill: "#faf6ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#C0CAD3",
+-        text: "#000000"
++        fill: "#c9a3f7",
++        text: "#4c4f69"
+       },
+-      semi: "#eceef0",
+-      pattern: "#bcc3c9",
+       highlight: {
+-        srgb: "#cbe7f1",
+-        p3: "color(display-p3 0.8163 0.9023 0.9416)"
++        srgb: "#8839ef",
++        p3: "color(display-p3 0.533 0.224 0.937)"
+       }
+     },
+-    "light-blue": {
+-      solid: "#4ba1f1",
+-      fill: "#4ba1f1",
+-      frame: {
+-        headingStroke: "#6cb2f3",
+-        headingFill: "#f8fbfe",
+-        stroke: "#6cb2f3",
+-        fill: "#fafcff",
+-        text: "#000000"
+-      },
+-      note: {
+-        fill: "#9BC4FD",
+-        text: "#000000"
+-      },
+-      semi: "#ddedfa",
+-      pattern: "#6fbbf8",
+-      highlight: {
+-        srgb: "#00f4ff",
+-        p3: "color(display-p3 0.1512 0.9414 0.9996)"
+-      }
+-    },
+-    "light-green": {
+-      solid: "#4cb05e",
+-      fill: "#4cb05e",
++    blue: {
++      solid: "#1e66f5",
++      fill: "#1e66f5",
++      semi: "#d0defe",
++      pattern: "#1252d3",
+       frame: {
+-        headingStroke: "#6dbe7c",
+-        headingFill: "#f8fcf9",
+-        stroke: "#6dbe7c",
+-        fill: "#fafdfa",
+-        text: "#000000"
++        headingStroke: "#3d7df6",
++        headingFill: "#eef3fe",
++        stroke: "#3d7df6",
++        fill: "#f5f8ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#98D08A",
+-        text: "#000000"
++        fill: "#96b4fb",
++        text: "#4c4f69"
+       },
+-      semi: "#dbf0e0",
+-      pattern: "#65cb78",
+       highlight: {
+-        srgb: "#65f641",
+-        p3: "color(display-p3 0.563 0.9495 0.3857)"
++        srgb: "#1e66f5",
++        p3: "color(display-p3 0.118 0.400 0.961)"
+       }
+     },
+-    "light-red": {
+-      solid: "#f87777",
+-      fill: "#f87777",
++    sky: {
++      solid: "#04a5e5",
++      fill: "#04a5e5",
++      semi: "#ccecf9",
++      pattern: "#0393cc",
+       frame: {
+-        headingStroke: "#f89090",
+-        headingFill: "#fffafa",
+-        stroke: "#f89090",
+-        fill: "#fffbfb",
+-        text: "#000000"
++        headingStroke: "#1fb0e8",
++        headingFill: "#eaf7fd",
++        stroke: "#1fb0e8",
++        fill: "#f3fbfe",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#F7A5A1",
+-        text: "#000000"
++        fill: "#84d1f1",
++        text: "#4c4f69"
+       },
+-      semi: "#f4dadb",
+-      pattern: "#fe9e9e",
+       highlight: {
+-        srgb: "#ff7fa3",
+-        p3: "color(display-p3 0.9988 0.5301 0.6397)"
++        srgb: "#04a5e5",
++        p3: "color(display-p3 0.016 0.647 0.898)"
+       }
+     },
+-    "light-violet": {
+-      solid: "#e085f4",
+-      fill: "#e085f4",
++    teal: {
++      solid: "#179299",
++      fill: "#179299",
++      semi: "#cce8ea",
++      pattern: "#13838a",
+       frame: {
+-        headingStroke: "#e59bf5",
+-        headingFill: "#fefaff",
+-        stroke: "#e59bf5",
+-        fill: "#fefbff",
+-        text: "#000000"
++        headingStroke: "#1ea5ad",
++        headingFill: "#e8f7f8",
++        stroke: "#1ea5ad",
++        fill: "#f2fbfb",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#DFB0F9",
+-        text: "#000000"
++        fill: "#7ec9cd",
++        text: "#4c4f69"
+       },
+-      semi: "#f5eafa",
+-      pattern: "#e9acf8",
+       highlight: {
+-        srgb: "#ff88ff",
+-        p3: "color(display-p3 0.9676 0.5652 0.9999)"
++        srgb: "#179299",
++        p3: "color(display-p3 0.090 0.573 0.600)"
+       }
+     },
+-    orange: {
+-      solid: "#e16919",
+-      fill: "#e16919",
++    green: {
++      solid: "#40a02b",
++      fill: "#40a02b",
++      semi: "#d4edce",
++      pattern: "#358c22",
+       frame: {
+-        headingStroke: "#e68544",
+-        headingFill: "#fef9f6",
+-        stroke: "#e68544",
+-        fill: "#fef9f6",
+-        text: "#000000"
++        headingStroke: "#52ae3e",
++        headingFill: "#edf8ea",
++        stroke: "#52ae3e",
++        fill: "#f5fbf3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FAA475",
+-        text: "#000000"
++        fill: "#97d282",
++        text: "#4c4f69"
+       },
+-      semi: "#f8e2d4",
+-      pattern: "#f78438",
+       highlight: {
+-        srgb: "#ffa500",
+-        p3: "color(display-p3 0.9988 0.6905 0.266)"
++        srgb: "#40a02b",
++        p3: "color(display-p3 0.251 0.627 0.169)"
+       }
+     },
+-    red: {
+-      solid: "#e03131",
+-      fill: "#e03131",
++    yellow: {
++      solid: "#df8e1d",
++      fill: "#df8e1d",
++      semi: "#f6e5cc",
++      pattern: "#c47b12",
+       frame: {
+-        headingStroke: "#e55757",
+-        headingFill: "#fef7f7",
+-        stroke: "#e55757",
+-        fill: "#fef9f9",
+-        text: "#000000"
++        headingStroke: "#e49b35",
++        headingFill: "#fdf5e8",
++        stroke: "#e49b35",
++        fill: "#fefaf3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FC8282",
+-        text: "#000000"
++        fill: "#efca8c",
++        text: "#4c4f69"
+       },
+-      semi: "#f4dadb",
+-      pattern: "#e55959",
+       highlight: {
+-        srgb: "#ff636e",
+-        p3: "color(display-p3 0.9992 0.4376 0.45)"
++        srgb: "#df8e1d",
++        p3: "color(display-p3 0.875 0.557 0.114)"
+       }
+     },
+-    violet: {
+-      solid: "#ae3ec9",
+-      fill: "#ae3ec9",
++    peach: {
++      solid: "#fe640b",
++      fill: "#fe640b",
++      semi: "#feddcc",
++      pattern: "#e55509",
+       frame: {
+-        headingStroke: "#bc62d3",
+-        headingFill: "#fcf7fd",
+-        stroke: "#bc62d3",
+-        fill: "#fdf9fd",
+-        text: "#000000"
++        headingStroke: "#fe7529",
++        headingFill: "#fff2ea",
++        stroke: "#fe7529",
++        fill: "#fff8f3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#DB91FD",
+-        text: "#000000"
++        fill: "#fea97c",
++        text: "#4c4f69"
+       },
+-      semi: "#ecdcf2",
+-      pattern: "#bd63d3",
+       highlight: {
+-        srgb: "#c77cff",
+-        p3: "color(display-p3 0.7469 0.5089 0.9995)"
++        srgb: "#fe640b",
++        p3: "color(display-p3 0.996 0.392 0.043)"
+       }
+     },
+-    yellow: {
+-      solid: "#f1ac4b",
+-      fill: "#f1ac4b",
++    maroon: {
++      solid: "#e64553",
++      fill: "#e64553",
++      semi: "#f9d4d7",
++      pattern: "#d03040",
+       frame: {
+-        headingStroke: "#f3bb6c",
+-        headingFill: "#fefcf8",
+-        stroke: "#f3bb6c",
+-        fill: "#fffdfa",
+-        text: "#000000"
++        headingStroke: "#e95b68",
++        headingFill: "#fdf0f1",
++        stroke: "#e95b68",
++        fill: "#fef7f8",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FED49A",
+-        text: "#000000"
++        fill: "#f2a0a8",
++        text: "#4c4f69"
+       },
+-      semi: "#f9f0e6",
+-      pattern: "#fecb92",
+       highlight: {
+-        srgb: "#fddd00",
+-        p3: "color(display-p3 0.972 0.8705 0.05)"
++        srgb: "#e64553",
++        p3: "color(display-p3 0.902 0.271 0.325)"
+       }
+     },
+-    white: {
+-      solid: "#FFFFFF",
+-      fill: "#FFFFFF",
+-      semi: "#f5f5f5",
+-      pattern: "#f9f9f9",
++    red: {
++      solid: "#d20f39",
++      fill: "#d20f39",
++      semi: "#f5ccd5",
++      pattern: "#bc0c30",
+       frame: {
+-        headingStroke: "#7d7d7d",
+-        headingFill: "#ffffff",
+-        stroke: "#7d7d7d",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#d92548",
++        headingFill: "#fcedf1",
++        stroke: "#d92548",
++        fill: "#fef5f7",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FFFFFF",
+-        text: "#000000"
++        fill: "#eb8099",
++        text: "#4c4f69"
+       },
+       highlight: {
+-        srgb: "#ffffff",
+-        p3: "color(display-p3 1 1 1)"
++        srgb: "#d20f39",
++        p3: "color(display-p3 0.824 0.059 0.224)"
+       }
+     }
+   },
+   darkMode: {
+     id: "dark",
+-    text: "hsl(210, 17%, 98%)",
+-    background: "hsl(240, 5%, 6.5%)",
+-    solid: "#010403",
++    text: "#cad3f5",
++    background: "#24273a",
++    solid: "#24273a",
+     black: {
+-      solid: "#f2f2f2",
+-      fill: "#f2f2f2",
++      solid: "#cad3f5",
++      fill: "#cad3f5",
++      semi: "#363a4f",
++      pattern: "#a5adcb",
+       frame: {
+-        headingStroke: "#5c5c5c",
+-        headingFill: "#252525",
+-        stroke: "#5c5c5c",
+-        fill: "#0c0c0c",
+-        text: "#f2f2f2"
++        headingStroke: "#494d64",
++        headingFill: "#1e2030",
++        stroke: "#494d64",
++        fill: "#24273a",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#2c2c2c",
+-        text: "#f2f2f2"
++        fill: "#363a4f",
++        text: "#cad3f5"
+       },
+-      semi: "#2c3036",
+-      pattern: "#989898",
+       highlight: {
+-        srgb: "#d2b700",
+-        p3: "color(display-p3 0.8078 0.6225 0.0312)"
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
+       }
+     },
+-    blue: {
+-      solid: "#4f72fc",
+-      // 3c60f0
+-      fill: "#4f72fc",
++    lavender: {
++      solid: "#b7bdf8",
++      fill: "#b7bdf8",
++      semi: "#2d3055",
++      pattern: "#8898d8",
+       frame: {
+-        headingStroke: "#384994",
+-        headingFill: "#1C2036",
+-        stroke: "#384994",
+-        fill: "#11141f",
+-        text: "#f2f2f2"
++        headingStroke: "#5b6487",
++        headingFill: "#252a45",
++        stroke: "#5b6487",
++        fill: "#1a1e35",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#2A3F98",
+-        text: "#f2f2f2"
++        fill: "#3a3f6e",
++        text: "#cad3f5"
+       },
+-      semi: "#262d40",
+-      pattern: "#3a4b9e",
+       highlight: {
+-        srgb: "#0079d2",
+-        p3: "color(display-p3 0.0032 0.4655 0.7991)"
++        srgb: "#b7bdf8",
++        p3: "color(display-p3 0.718 0.741 0.973)"
+       }
+     },
+-    green: {
+-      solid: "#099268",
+-      fill: "#099268",
++    pink: {
++      solid: "#f5bde6",
++      fill: "#f5bde6",
++      semi: "#3d2a3d",
++      pattern: "#d898c8",
+       frame: {
+-        headingStroke: "#10513C",
+-        headingFill: "#14241f",
+-        stroke: "#10513C",
+-        fill: "#0E1614",
+-        text: "#f2f2f2"
++        headingStroke: "#7a4d72",
++        headingFill: "#2e1e2e",
++        stroke: "#7a4d72",
++        fill: "#1e1420",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#014429",
+-        text: "#f2f2f2"
++        fill: "#6b3a64",
++        text: "#cad3f5"
+       },
+-      semi: "#253231",
+-      pattern: "#366a53",
+       highlight: {
+-        srgb: "#009774",
+-        p3: "color(display-p3 0.0085 0.582 0.4604)"
++        srgb: "#f5bde6",
++        p3: "color(display-p3 0.961 0.741 0.902)"
+       }
+     },
+-    grey: {
+-      solid: "#9398b0",
+-      fill: "#9398b0",
++    mauve: {
++      solid: "#c6a0f6",
++      fill: "#c6a0f6",
++      semi: "#352a47",
++      pattern: "#a878d8",
+       frame: {
+-        headingStroke: "#42474D",
+-        headingFill: "#23262A",
+-        stroke: "#42474D",
+-        fill: "#151719",
+-        text: "#f2f2f2"
++        headingStroke: "#6b4d8a",
++        headingFill: "#271e36",
++        stroke: "#6b4d8a",
++        fill: "#1c1428",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#56595F",
+-        text: "#f2f2f2"
++        fill: "#5a3a78",
++        text: "#cad3f5"
+       },
+-      semi: "#33373c",
+-      pattern: "#7c8187",
+       highlight: {
+-        srgb: "#9cb4cb",
+-        p3: "color(display-p3 0.6299 0.7012 0.7856)"
++        srgb: "#c6a0f6",
++        p3: "color(display-p3 0.776 0.627 0.965)"
+       }
+     },
+-    "light-blue": {
+-      solid: "#4dabf7",
+-      fill: "#4dabf7",
++    blue: {
++      solid: "#8aadf4",
++      fill: "#8aadf4",
++      semi: "#263047",
++      pattern: "#6888d8",
+       frame: {
+-        headingStroke: "#075797",
+-        headingFill: "#142839",
+-        stroke: "#075797",
+-        fill: "#0B1823",
+-        text: "#f2f2f2"
++        headingStroke: "#3d5e8a",
++        headingFill: "#1c2436",
++        stroke: "#3d5e8a",
++        fill: "#131824",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#1F5495",
+-        text: "#f2f2f2"
++        fill: "#2a4070",
++        text: "#cad3f5"
+       },
+-      semi: "#2a3642",
+-      pattern: "#4d7aa9",
+       highlight: {
+-        srgb: "#00bdc8",
+-        p3: "color(display-p3 0.0023 0.7259 0.7735)"
++        srgb: "#8aadf4",
++        p3: "color(display-p3 0.541 0.678 0.957)"
+       }
+     },
+-    "light-green": {
+-      solid: "#40c057",
+-      fill: "#40c057",
++    sky: {
++      solid: "#91d7e3",
++      fill: "#91d7e3",
++      semi: "#253840",
++      pattern: "#72b8c8",
+       frame: {
+-        headingStroke: "#1C5427",
+-        headingFill: "#18251A",
+-        stroke: "#1C5427",
+-        fill: "#0F1911",
+-        text: "#f2f2f2"
++        headingStroke: "#3d7882",
++        headingFill: "#1c2d33",
++        stroke: "#3d7882",
++        fill: "#141f24",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#21581D",
+-        text: "#f2f2f2"
++        fill: "#2a5a65",
++        text: "#cad3f5"
+       },
+-      semi: "#2a3830",
+-      pattern: "#4e874e",
+       highlight: {
+-        srgb: "#00a000",
+-        p3: "color(display-p3 0.2711 0.6172 0.0195)"
++        srgb: "#91d7e3",
++        p3: "color(display-p3 0.569 0.843 0.890)"
+       }
+     },
+-    "light-red": {
+-      solid: "#ff8787",
+-      fill: "#ff8787",
++    teal: {
++      solid: "#8bd5ca",
++      fill: "#8bd5ca",
++      semi: "#25383a",
++      pattern: "#6eb8ae",
+       frame: {
+-        headingStroke: "#6f3232",
+-        // Darker and desaturated variant of solid
+-        headingFill: "#341818",
+-        // Deep, muted dark red
+-        stroke: "#6f3232",
+-        // Matches headingStroke
+-        fill: "#181212",
+-        // Darker, muted background shade
+-        text: "#f2f2f2"
+-        // Consistent bright text color
++        headingStroke: "#3d7870",
++        headingFill: "#1c2d2c",
++        stroke: "#3d7870",
++        fill: "#141f1f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#7a3333",
+-        // Medium-dark, muted variant of solid
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3c2b2b",
+-      // Subdued, darker neutral-red tone
+-      pattern: "#a56767",
+-      // Existing pattern shade retained
++        fill: "#2a5a55",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#db005b",
+-        p3: "color(display-p3 0.7849 0.0585 0.3589)"
++        srgb: "#8bd5ca",
++        p3: "color(display-p3 0.545 0.835 0.792)"
+       }
+     },
+-    "light-violet": {
+-      solid: "#e599f7",
+-      fill: "#e599f7",
++    green: {
++      solid: "#a6da95",
++      fill: "#a6da95",
++      semi: "#263a26",
++      pattern: "#88b878",
+       frame: {
+-        headingStroke: "#6c367a",
+-        headingFill: "#2D2230",
+-        stroke: "#6c367a",
+-        fill: "#1C151E",
+-        text: "#f2f2f2"
++        headingStroke: "#4a7a3d",
++        headingFill: "#1e2e1c",
++        stroke: "#4a7a3d",
++        fill: "#151f14",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#762F8E",
+-        text: "#f2f2f2"
++        fill: "#365e2e",
++        text: "#cad3f5"
+       },
+-      semi: "#383442",
+-      pattern: "#9770a9",
+       highlight: {
+-        srgb: "#c400c7",
+-        p3: "color(display-p3 0.7024 0.0403 0.753)"
++        srgb: "#a6da95",
++        p3: "color(display-p3 0.651 0.855 0.584)"
+       }
+     },
+-    orange: {
+-      solid: "#f76707",
+-      fill: "#f76707",
++    yellow: {
++      solid: "#eed49f",
++      fill: "#eed49f",
++      semi: "#3a3225",
++      pattern: "#c8a878",
+       frame: {
+-        headingStroke: "#773a0e",
+-        // Darker, muted version of solid
+-        headingFill: "#2f1d13",
+-        // Deep, warm, muted background
+-        stroke: "#773a0e",
+-        // Matches headingStroke
+-        fill: "#1c1512",
+-        // Darker, richer muted background
+-        text: "#f2f2f2"
+-        // Bright text for contrast
++        headingStroke: "#6e5a2a",
++        headingFill: "#2a2416",
++        stroke: "#6e5a2a",
++        fill: "#1c180f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#7c3905",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3b2e27",
+-      // Muted neutral-orange tone
+-      pattern: "#9f552d",
+-      // Retained existing shade
+-      highlight: {
+-        srgb: "#d07a00",
+-        p3: "color(display-p3 0.7699 0.4937 0.0085)"
+-      }
+-    },
+-    red: {
+-      solid: "#e03131",
+-      fill: "#e03131",
+-      frame: {
+-        headingStroke: "#701e1e",
+-        // Darker, muted variation of solid
+-        headingFill: "#301616",
+-        // Deep, muted reddish backdrop
+-        stroke: "#701e1e",
+-        // Matches headingStroke
+-        fill: "#1b1313",
+-        // Rich, dark muted background
+-        text: "#f2f2f2"
+-        // Bright text for readability
++        fill: "#5a4820",
++        text: "#cad3f5"
+       },
+-      note: {
+-        fill: "#7e201f",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#382726",
+-      // Dark neutral-red tone
+-      pattern: "#8f3734",
+-      // Existing pattern color retained
+       highlight: {
+-        srgb: "#de002c",
+-        p3: "color(display-p3 0.7978 0.0509 0.2035)"
++        srgb: "#eed49f",
++        p3: "color(display-p3 0.933 0.831 0.624)"
+       }
+     },
+-    violet: {
+-      solid: "#ae3ec9",
+-      fill: "#ae3ec9",
++    peach: {
++      solid: "#f5a97f",
++      fill: "#f5a97f",
++      semi: "#3d2e24",
++      pattern: "#c88868",
+       frame: {
+-        headingStroke: "#6d1583",
+-        // Darker, muted variation of solid
+-        headingFill: "#27152e",
+-        // Deep, rich muted violet backdrop
+-        stroke: "#6d1583",
+-        // Matches headingStroke
+-        fill: "#1b0f21",
+-        // Darker muted violet background
+-        text: "#f2f2f2"
+-        // Consistent bright text color
++        headingStroke: "#7a4e2a",
++        headingFill: "#2e1e14",
++        stroke: "#7a4e2a",
++        fill: "#1e140f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#5f1c70",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#342938",
+-      // Dark neutral-violet tone
+-      pattern: "#763a8b",
+-      // Retained existing pattern color
++        fill: "#6b3d22",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#9e00ee",
+-        p3: "color(display-p3 0.5651 0.0079 0.8986)"
++        srgb: "#f5a97f",
++        p3: "color(display-p3 0.961 0.663 0.498)"
+       }
+     },
+-    yellow: {
+-      solid: "#ffc034",
+-      fill: "#ffc034",
++    maroon: {
++      solid: "#ee99a0",
++      fill: "#ee99a0",
++      semi: "#3d2830",
++      pattern: "#c87888",
+       frame: {
+-        headingStroke: "#684e12",
+-        // Darker, muted variant of solid
+-        headingFill: "#2a2113",
+-        // Rich, muted dark-yellow background
+-        stroke: "#684e12",
+-        // Matches headingStroke
+-        fill: "#1e1911",
+-        // Darker muted shade for background fill
+-        text: "#f2f2f2"
+-        // Bright text color for readability
++        headingStroke: "#7a3d4a",
++        headingFill: "#2e1c22",
++        stroke: "#7a3d4a",
++        fill: "#1e1318",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#8a5e1c",
+-        // Muted, dark complementary variant
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3b352b",
+-      // Dark muted neutral-yellow tone
+-      pattern: "#fecb92",
+-      // Existing shade retained
++        fill: "#6b2e38",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#d2b700",
+-        p3: "color(display-p3 0.8078 0.7225 0.0312)"
++        srgb: "#ee99a0",
++        p3: "color(display-p3 0.933 0.600 0.627)"
+       }
+     },
+-    white: {
+-      solid: "#f3f3f3",
+-      fill: "#f3f3f3",
+-      semi: "#f5f5f5",
+-      pattern: "#f9f9f9",
++    red: {
++      solid: "#ed8796",
++      fill: "#ed8796",
++      semi: "#3d2530",
++      pattern: "#c86878",
+       frame: {
+-        headingStroke: "#ffffff",
+-        headingFill: "#ffffff",
+-        stroke: "#ffffff",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#7a3245",
++        headingFill: "#2e1620",
++        stroke: "#7a3245",
++        fill: "#1e1018",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#eaeaea",
+-        text: "#1d1d1d"
++        fill: "#6b2438",
++        text: "#cad3f5"
+       },
+       highlight: {
+-        srgb: "#ffffff",
+-        p3: "color(display-p3 1 1 1)"
++        srgb: "#ed8796",
++        p3: "color(display-p3 0.929 0.529 0.588)"
+       }
+     }
+   }
+diff --git a/dist-esm/styles/TLColorStyle.mjs b/dist-esm/styles/TLColorStyle.mjs
+index 12ec106dbbf0eab78a36c1789d94bae79e3556b3..7c684736d0a89ff4eceec5ab70ab70538862d874 100644
+--- a/dist-esm/styles/TLColorStyle.mjs
++++ b/dist-esm/styles/TLColorStyle.mjs
+@@ -1,616 +1,532 @@
+ import { StyleProp } from "./StyleProp.mjs";
+ const defaultColorNames = [
+   "black",
+-  "grey",
+-  "light-violet",
+-  "violet",
++  "lavender",
++  "pink",
++  "mauve",
+   "blue",
+-  "light-blue",
+-  "yellow",
+-  "orange",
++  "sky",
++  "teal",
+   "green",
+-  "light-green",
+-  "light-red",
+-  "red",
+-  "white"
++  "yellow",
++  "peach",
++  "maroon",
++  "red"
+ ];
+ const DefaultColorThemePalette = {
+   lightMode: {
+     id: "light",
+-    text: "#000000",
+-    background: "#f9fafb",
+-    solid: "#fcfffe",
++    text: "#4c4f69",
++    background: "#eff1f5",
++    solid: "#eff1f5",
+     black: {
+-      solid: "#1d1d1d",
+-      fill: "#1d1d1d",
++      solid: "#4c4f69",
++      fill: "#4c4f69",
++      semi: "#dde0f0",
++      pattern: "#5c5f77",
+       frame: {
+-        headingStroke: "#717171",
+-        headingFill: "#ffffff",
+-        stroke: "#717171",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#6c6f85",
++        headingFill: "#e6e9ef",
++        stroke: "#6c6f85",
++        fill: "#eff1f5",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FCE19C",
+-        text: "#000000"
++        fill: "#bcc0cc",
++        text: "#4c4f69"
+       },
+-      semi: "#e8e8e8",
+-      pattern: "#494949",
+       highlight: {
+-        srgb: "#fddd00",
+-        p3: "color(display-p3 0.972 0.8205 0.05)"
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
+       }
+     },
+-    blue: {
+-      solid: "#4465e9",
+-      fill: "#4465e9",
++    lavender: {
++      solid: "#7287fd",
++      fill: "#7287fd",
++      semi: "#dde3ff",
++      pattern: "#5b6de0",
+       frame: {
+-        headingStroke: "#6681ec",
+-        headingFill: "#f9fafe",
+-        stroke: "#6681ec",
+-        fill: "#f9fafe",
+-        text: "#000000"
++        headingStroke: "#8898fe",
++        headingFill: "#eef0ff",
++        stroke: "#8898fe",
++        fill: "#f5f6ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#8AA3FF",
+-        text: "#000000"
++        fill: "#c0c8ff",
++        text: "#4c4f69"
+       },
+-      semi: "#dce1f8",
+-      pattern: "#6681ee",
+       highlight: {
+-        srgb: "#10acff",
+-        p3: "color(display-p3 0.308 0.6632 0.9996)"
++        srgb: "#7287fd",
++        p3: "color(display-p3 0.447 0.529 0.992)"
+       }
+     },
+-    green: {
+-      solid: "#099268",
+-      fill: "#099268",
++    pink: {
++      solid: "#ea76cb",
++      fill: "#ea76cb",
++      semi: "#fae0f5",
++      pattern: "#df5dbc",
+       frame: {
+-        headingStroke: "#37a684",
+-        headingFill: "#f8fcfa",
+-        stroke: "#37a684",
+-        fill: "#f8fcfa",
+-        text: "#000000"
++        headingStroke: "#ed8ed3",
++        headingFill: "#fdf0fb",
++        stroke: "#ed8ed3",
++        fill: "#fef8fd",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#6FC896",
+-        text: "#000000"
++        fill: "#f4b8e4",
++        text: "#4c4f69"
+       },
+-      semi: "#d3e9e3",
+-      pattern: "#39a785",
+       highlight: {
+-        srgb: "#00ffc8",
+-        p3: "color(display-p3 0.2536 0.984 0.7981)"
++        srgb: "#ea76cb",
++        p3: "color(display-p3 0.918 0.463 0.796)"
+       }
+     },
+-    grey: {
+-      solid: "#9fa8b2",
+-      fill: "#9fa8b2",
++    mauve: {
++      solid: "#8839ef",
++      fill: "#8839ef",
++      semi: "#e8d5fc",
++      pattern: "#7325e0",
+       frame: {
+-        headingStroke: "#aaaaab",
+-        headingFill: "#fbfcfc",
+-        stroke: "#aaaaab",
+-        fill: "#fcfcfd",
+-        text: "#000000"
++        headingStroke: "#9b56f0",
++        headingFill: "#f5eefe",
++        stroke: "#9b56f0",
++        fill: "#faf6ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#C0CAD3",
+-        text: "#000000"
++        fill: "#c9a3f7",
++        text: "#4c4f69"
+       },
+-      semi: "#eceef0",
+-      pattern: "#bcc3c9",
+       highlight: {
+-        srgb: "#cbe7f1",
+-        p3: "color(display-p3 0.8163 0.9023 0.9416)"
++        srgb: "#8839ef",
++        p3: "color(display-p3 0.533 0.224 0.937)"
+       }
+     },
+-    "light-blue": {
+-      solid: "#4ba1f1",
+-      fill: "#4ba1f1",
+-      frame: {
+-        headingStroke: "#6cb2f3",
+-        headingFill: "#f8fbfe",
+-        stroke: "#6cb2f3",
+-        fill: "#fafcff",
+-        text: "#000000"
+-      },
+-      note: {
+-        fill: "#9BC4FD",
+-        text: "#000000"
+-      },
+-      semi: "#ddedfa",
+-      pattern: "#6fbbf8",
+-      highlight: {
+-        srgb: "#00f4ff",
+-        p3: "color(display-p3 0.1512 0.9414 0.9996)"
+-      }
+-    },
+-    "light-green": {
+-      solid: "#4cb05e",
+-      fill: "#4cb05e",
++    blue: {
++      solid: "#1e66f5",
++      fill: "#1e66f5",
++      semi: "#d0defe",
++      pattern: "#1252d3",
+       frame: {
+-        headingStroke: "#6dbe7c",
+-        headingFill: "#f8fcf9",
+-        stroke: "#6dbe7c",
+-        fill: "#fafdfa",
+-        text: "#000000"
++        headingStroke: "#3d7df6",
++        headingFill: "#eef3fe",
++        stroke: "#3d7df6",
++        fill: "#f5f8ff",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#98D08A",
+-        text: "#000000"
++        fill: "#96b4fb",
++        text: "#4c4f69"
+       },
+-      semi: "#dbf0e0",
+-      pattern: "#65cb78",
+       highlight: {
+-        srgb: "#65f641",
+-        p3: "color(display-p3 0.563 0.9495 0.3857)"
++        srgb: "#1e66f5",
++        p3: "color(display-p3 0.118 0.400 0.961)"
+       }
+     },
+-    "light-red": {
+-      solid: "#f87777",
+-      fill: "#f87777",
++    sky: {
++      solid: "#04a5e5",
++      fill: "#04a5e5",
++      semi: "#ccecf9",
++      pattern: "#0393cc",
+       frame: {
+-        headingStroke: "#f89090",
+-        headingFill: "#fffafa",
+-        stroke: "#f89090",
+-        fill: "#fffbfb",
+-        text: "#000000"
++        headingStroke: "#1fb0e8",
++        headingFill: "#eaf7fd",
++        stroke: "#1fb0e8",
++        fill: "#f3fbfe",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#F7A5A1",
+-        text: "#000000"
++        fill: "#84d1f1",
++        text: "#4c4f69"
+       },
+-      semi: "#f4dadb",
+-      pattern: "#fe9e9e",
+       highlight: {
+-        srgb: "#ff7fa3",
+-        p3: "color(display-p3 0.9988 0.5301 0.6397)"
++        srgb: "#04a5e5",
++        p3: "color(display-p3 0.016 0.647 0.898)"
+       }
+     },
+-    "light-violet": {
+-      solid: "#e085f4",
+-      fill: "#e085f4",
++    teal: {
++      solid: "#179299",
++      fill: "#179299",
++      semi: "#cce8ea",
++      pattern: "#13838a",
+       frame: {
+-        headingStroke: "#e59bf5",
+-        headingFill: "#fefaff",
+-        stroke: "#e59bf5",
+-        fill: "#fefbff",
+-        text: "#000000"
++        headingStroke: "#1ea5ad",
++        headingFill: "#e8f7f8",
++        stroke: "#1ea5ad",
++        fill: "#f2fbfb",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#DFB0F9",
+-        text: "#000000"
++        fill: "#7ec9cd",
++        text: "#4c4f69"
+       },
+-      semi: "#f5eafa",
+-      pattern: "#e9acf8",
+       highlight: {
+-        srgb: "#ff88ff",
+-        p3: "color(display-p3 0.9676 0.5652 0.9999)"
++        srgb: "#179299",
++        p3: "color(display-p3 0.090 0.573 0.600)"
+       }
+     },
+-    orange: {
+-      solid: "#e16919",
+-      fill: "#e16919",
++    green: {
++      solid: "#40a02b",
++      fill: "#40a02b",
++      semi: "#d4edce",
++      pattern: "#358c22",
+       frame: {
+-        headingStroke: "#e68544",
+-        headingFill: "#fef9f6",
+-        stroke: "#e68544",
+-        fill: "#fef9f6",
+-        text: "#000000"
++        headingStroke: "#52ae3e",
++        headingFill: "#edf8ea",
++        stroke: "#52ae3e",
++        fill: "#f5fbf3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FAA475",
+-        text: "#000000"
++        fill: "#97d282",
++        text: "#4c4f69"
+       },
+-      semi: "#f8e2d4",
+-      pattern: "#f78438",
+       highlight: {
+-        srgb: "#ffa500",
+-        p3: "color(display-p3 0.9988 0.6905 0.266)"
++        srgb: "#40a02b",
++        p3: "color(display-p3 0.251 0.627 0.169)"
+       }
+     },
+-    red: {
+-      solid: "#e03131",
+-      fill: "#e03131",
++    yellow: {
++      solid: "#df8e1d",
++      fill: "#df8e1d",
++      semi: "#f6e5cc",
++      pattern: "#c47b12",
+       frame: {
+-        headingStroke: "#e55757",
+-        headingFill: "#fef7f7",
+-        stroke: "#e55757",
+-        fill: "#fef9f9",
+-        text: "#000000"
++        headingStroke: "#e49b35",
++        headingFill: "#fdf5e8",
++        stroke: "#e49b35",
++        fill: "#fefaf3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FC8282",
+-        text: "#000000"
++        fill: "#efca8c",
++        text: "#4c4f69"
+       },
+-      semi: "#f4dadb",
+-      pattern: "#e55959",
+       highlight: {
+-        srgb: "#ff636e",
+-        p3: "color(display-p3 0.9992 0.4376 0.45)"
++        srgb: "#df8e1d",
++        p3: "color(display-p3 0.875 0.557 0.114)"
+       }
+     },
+-    violet: {
+-      solid: "#ae3ec9",
+-      fill: "#ae3ec9",
++    peach: {
++      solid: "#fe640b",
++      fill: "#fe640b",
++      semi: "#feddcc",
++      pattern: "#e55509",
+       frame: {
+-        headingStroke: "#bc62d3",
+-        headingFill: "#fcf7fd",
+-        stroke: "#bc62d3",
+-        fill: "#fdf9fd",
+-        text: "#000000"
++        headingStroke: "#fe7529",
++        headingFill: "#fff2ea",
++        stroke: "#fe7529",
++        fill: "#fff8f3",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#DB91FD",
+-        text: "#000000"
++        fill: "#fea97c",
++        text: "#4c4f69"
+       },
+-      semi: "#ecdcf2",
+-      pattern: "#bd63d3",
+       highlight: {
+-        srgb: "#c77cff",
+-        p3: "color(display-p3 0.7469 0.5089 0.9995)"
++        srgb: "#fe640b",
++        p3: "color(display-p3 0.996 0.392 0.043)"
+       }
+     },
+-    yellow: {
+-      solid: "#f1ac4b",
+-      fill: "#f1ac4b",
++    maroon: {
++      solid: "#e64553",
++      fill: "#e64553",
++      semi: "#f9d4d7",
++      pattern: "#d03040",
+       frame: {
+-        headingStroke: "#f3bb6c",
+-        headingFill: "#fefcf8",
+-        stroke: "#f3bb6c",
+-        fill: "#fffdfa",
+-        text: "#000000"
++        headingStroke: "#e95b68",
++        headingFill: "#fdf0f1",
++        stroke: "#e95b68",
++        fill: "#fef7f8",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FED49A",
+-        text: "#000000"
++        fill: "#f2a0a8",
++        text: "#4c4f69"
+       },
+-      semi: "#f9f0e6",
+-      pattern: "#fecb92",
+       highlight: {
+-        srgb: "#fddd00",
+-        p3: "color(display-p3 0.972 0.8705 0.05)"
++        srgb: "#e64553",
++        p3: "color(display-p3 0.902 0.271 0.325)"
+       }
+     },
+-    white: {
+-      solid: "#FFFFFF",
+-      fill: "#FFFFFF",
+-      semi: "#f5f5f5",
+-      pattern: "#f9f9f9",
++    red: {
++      solid: "#d20f39",
++      fill: "#d20f39",
++      semi: "#f5ccd5",
++      pattern: "#bc0c30",
+       frame: {
+-        headingStroke: "#7d7d7d",
+-        headingFill: "#ffffff",
+-        stroke: "#7d7d7d",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#d92548",
++        headingFill: "#fcedf1",
++        stroke: "#d92548",
++        fill: "#fef5f7",
++        text: "#4c4f69"
+       },
+       note: {
+-        fill: "#FFFFFF",
+-        text: "#000000"
++        fill: "#eb8099",
++        text: "#4c4f69"
+       },
+       highlight: {
+-        srgb: "#ffffff",
+-        p3: "color(display-p3 1 1 1)"
++        srgb: "#d20f39",
++        p3: "color(display-p3 0.824 0.059 0.224)"
+       }
+     }
+   },
+   darkMode: {
+     id: "dark",
+-    text: "hsl(210, 17%, 98%)",
+-    background: "hsl(240, 5%, 6.5%)",
+-    solid: "#010403",
++    text: "#cad3f5",
++    background: "#24273a",
++    solid: "#24273a",
+     black: {
+-      solid: "#f2f2f2",
+-      fill: "#f2f2f2",
++      solid: "#cad3f5",
++      fill: "#cad3f5",
++      semi: "#363a4f",
++      pattern: "#a5adcb",
+       frame: {
+-        headingStroke: "#5c5c5c",
+-        headingFill: "#252525",
+-        stroke: "#5c5c5c",
+-        fill: "#0c0c0c",
+-        text: "#f2f2f2"
++        headingStroke: "#494d64",
++        headingFill: "#1e2030",
++        stroke: "#494d64",
++        fill: "#24273a",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#2c2c2c",
+-        text: "#f2f2f2"
++        fill: "#363a4f",
++        text: "#cad3f5"
+       },
+-      semi: "#2c3036",
+-      pattern: "#989898",
+       highlight: {
+-        srgb: "#d2b700",
+-        p3: "color(display-p3 0.8078 0.6225 0.0312)"
++        srgb: "#cad3f5",
++        p3: "color(display-p3 0.792 0.827 0.961)"
+       }
+     },
+-    blue: {
+-      solid: "#4f72fc",
+-      // 3c60f0
+-      fill: "#4f72fc",
++    lavender: {
++      solid: "#b7bdf8",
++      fill: "#b7bdf8",
++      semi: "#2d3055",
++      pattern: "#8898d8",
+       frame: {
+-        headingStroke: "#384994",
+-        headingFill: "#1C2036",
+-        stroke: "#384994",
+-        fill: "#11141f",
+-        text: "#f2f2f2"
++        headingStroke: "#5b6487",
++        headingFill: "#252a45",
++        stroke: "#5b6487",
++        fill: "#1a1e35",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#2A3F98",
+-        text: "#f2f2f2"
++        fill: "#3a3f6e",
++        text: "#cad3f5"
+       },
+-      semi: "#262d40",
+-      pattern: "#3a4b9e",
+       highlight: {
+-        srgb: "#0079d2",
+-        p3: "color(display-p3 0.0032 0.4655 0.7991)"
++        srgb: "#b7bdf8",
++        p3: "color(display-p3 0.718 0.741 0.973)"
+       }
+     },
+-    green: {
+-      solid: "#099268",
+-      fill: "#099268",
++    pink: {
++      solid: "#f5bde6",
++      fill: "#f5bde6",
++      semi: "#3d2a3d",
++      pattern: "#d898c8",
+       frame: {
+-        headingStroke: "#10513C",
+-        headingFill: "#14241f",
+-        stroke: "#10513C",
+-        fill: "#0E1614",
+-        text: "#f2f2f2"
++        headingStroke: "#7a4d72",
++        headingFill: "#2e1e2e",
++        stroke: "#7a4d72",
++        fill: "#1e1420",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#014429",
+-        text: "#f2f2f2"
++        fill: "#6b3a64",
++        text: "#cad3f5"
+       },
+-      semi: "#253231",
+-      pattern: "#366a53",
+       highlight: {
+-        srgb: "#009774",
+-        p3: "color(display-p3 0.0085 0.582 0.4604)"
++        srgb: "#f5bde6",
++        p3: "color(display-p3 0.961 0.741 0.902)"
+       }
+     },
+-    grey: {
+-      solid: "#9398b0",
+-      fill: "#9398b0",
++    mauve: {
++      solid: "#c6a0f6",
++      fill: "#c6a0f6",
++      semi: "#352a47",
++      pattern: "#a878d8",
+       frame: {
+-        headingStroke: "#42474D",
+-        headingFill: "#23262A",
+-        stroke: "#42474D",
+-        fill: "#151719",
+-        text: "#f2f2f2"
++        headingStroke: "#6b4d8a",
++        headingFill: "#271e36",
++        stroke: "#6b4d8a",
++        fill: "#1c1428",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#56595F",
+-        text: "#f2f2f2"
++        fill: "#5a3a78",
++        text: "#cad3f5"
+       },
+-      semi: "#33373c",
+-      pattern: "#7c8187",
+       highlight: {
+-        srgb: "#9cb4cb",
+-        p3: "color(display-p3 0.6299 0.7012 0.7856)"
++        srgb: "#c6a0f6",
++        p3: "color(display-p3 0.776 0.627 0.965)"
+       }
+     },
+-    "light-blue": {
+-      solid: "#4dabf7",
+-      fill: "#4dabf7",
++    blue: {
++      solid: "#8aadf4",
++      fill: "#8aadf4",
++      semi: "#263047",
++      pattern: "#6888d8",
+       frame: {
+-        headingStroke: "#075797",
+-        headingFill: "#142839",
+-        stroke: "#075797",
+-        fill: "#0B1823",
+-        text: "#f2f2f2"
++        headingStroke: "#3d5e8a",
++        headingFill: "#1c2436",
++        stroke: "#3d5e8a",
++        fill: "#131824",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#1F5495",
+-        text: "#f2f2f2"
++        fill: "#2a4070",
++        text: "#cad3f5"
+       },
+-      semi: "#2a3642",
+-      pattern: "#4d7aa9",
+       highlight: {
+-        srgb: "#00bdc8",
+-        p3: "color(display-p3 0.0023 0.7259 0.7735)"
++        srgb: "#8aadf4",
++        p3: "color(display-p3 0.541 0.678 0.957)"
+       }
+     },
+-    "light-green": {
+-      solid: "#40c057",
+-      fill: "#40c057",
++    sky: {
++      solid: "#91d7e3",
++      fill: "#91d7e3",
++      semi: "#253840",
++      pattern: "#72b8c8",
+       frame: {
+-        headingStroke: "#1C5427",
+-        headingFill: "#18251A",
+-        stroke: "#1C5427",
+-        fill: "#0F1911",
+-        text: "#f2f2f2"
++        headingStroke: "#3d7882",
++        headingFill: "#1c2d33",
++        stroke: "#3d7882",
++        fill: "#141f24",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#21581D",
+-        text: "#f2f2f2"
++        fill: "#2a5a65",
++        text: "#cad3f5"
+       },
+-      semi: "#2a3830",
+-      pattern: "#4e874e",
+       highlight: {
+-        srgb: "#00a000",
+-        p3: "color(display-p3 0.2711 0.6172 0.0195)"
++        srgb: "#91d7e3",
++        p3: "color(display-p3 0.569 0.843 0.890)"
+       }
+     },
+-    "light-red": {
+-      solid: "#ff8787",
+-      fill: "#ff8787",
++    teal: {
++      solid: "#8bd5ca",
++      fill: "#8bd5ca",
++      semi: "#25383a",
++      pattern: "#6eb8ae",
+       frame: {
+-        headingStroke: "#6f3232",
+-        // Darker and desaturated variant of solid
+-        headingFill: "#341818",
+-        // Deep, muted dark red
+-        stroke: "#6f3232",
+-        // Matches headingStroke
+-        fill: "#181212",
+-        // Darker, muted background shade
+-        text: "#f2f2f2"
+-        // Consistent bright text color
++        headingStroke: "#3d7870",
++        headingFill: "#1c2d2c",
++        stroke: "#3d7870",
++        fill: "#141f1f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#7a3333",
+-        // Medium-dark, muted variant of solid
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3c2b2b",
+-      // Subdued, darker neutral-red tone
+-      pattern: "#a56767",
+-      // Existing pattern shade retained
++        fill: "#2a5a55",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#db005b",
+-        p3: "color(display-p3 0.7849 0.0585 0.3589)"
++        srgb: "#8bd5ca",
++        p3: "color(display-p3 0.545 0.835 0.792)"
+       }
+     },
+-    "light-violet": {
+-      solid: "#e599f7",
+-      fill: "#e599f7",
++    green: {
++      solid: "#a6da95",
++      fill: "#a6da95",
++      semi: "#263a26",
++      pattern: "#88b878",
+       frame: {
+-        headingStroke: "#6c367a",
+-        headingFill: "#2D2230",
+-        stroke: "#6c367a",
+-        fill: "#1C151E",
+-        text: "#f2f2f2"
++        headingStroke: "#4a7a3d",
++        headingFill: "#1e2e1c",
++        stroke: "#4a7a3d",
++        fill: "#151f14",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#762F8E",
+-        text: "#f2f2f2"
++        fill: "#365e2e",
++        text: "#cad3f5"
+       },
+-      semi: "#383442",
+-      pattern: "#9770a9",
+       highlight: {
+-        srgb: "#c400c7",
+-        p3: "color(display-p3 0.7024 0.0403 0.753)"
++        srgb: "#a6da95",
++        p3: "color(display-p3 0.651 0.855 0.584)"
+       }
+     },
+-    orange: {
+-      solid: "#f76707",
+-      fill: "#f76707",
++    yellow: {
++      solid: "#eed49f",
++      fill: "#eed49f",
++      semi: "#3a3225",
++      pattern: "#c8a878",
+       frame: {
+-        headingStroke: "#773a0e",
+-        // Darker, muted version of solid
+-        headingFill: "#2f1d13",
+-        // Deep, warm, muted background
+-        stroke: "#773a0e",
+-        // Matches headingStroke
+-        fill: "#1c1512",
+-        // Darker, richer muted background
+-        text: "#f2f2f2"
+-        // Bright text for contrast
++        headingStroke: "#6e5a2a",
++        headingFill: "#2a2416",
++        stroke: "#6e5a2a",
++        fill: "#1c180f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#7c3905",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3b2e27",
+-      // Muted neutral-orange tone
+-      pattern: "#9f552d",
+-      // Retained existing shade
+-      highlight: {
+-        srgb: "#d07a00",
+-        p3: "color(display-p3 0.7699 0.4937 0.0085)"
+-      }
+-    },
+-    red: {
+-      solid: "#e03131",
+-      fill: "#e03131",
+-      frame: {
+-        headingStroke: "#701e1e",
+-        // Darker, muted variation of solid
+-        headingFill: "#301616",
+-        // Deep, muted reddish backdrop
+-        stroke: "#701e1e",
+-        // Matches headingStroke
+-        fill: "#1b1313",
+-        // Rich, dark muted background
+-        text: "#f2f2f2"
+-        // Bright text for readability
++        fill: "#5a4820",
++        text: "#cad3f5"
+       },
+-      note: {
+-        fill: "#7e201f",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#382726",
+-      // Dark neutral-red tone
+-      pattern: "#8f3734",
+-      // Existing pattern color retained
+       highlight: {
+-        srgb: "#de002c",
+-        p3: "color(display-p3 0.7978 0.0509 0.2035)"
++        srgb: "#eed49f",
++        p3: "color(display-p3 0.933 0.831 0.624)"
+       }
+     },
+-    violet: {
+-      solid: "#ae3ec9",
+-      fill: "#ae3ec9",
++    peach: {
++      solid: "#f5a97f",
++      fill: "#f5a97f",
++      semi: "#3d2e24",
++      pattern: "#c88868",
+       frame: {
+-        headingStroke: "#6d1583",
+-        // Darker, muted variation of solid
+-        headingFill: "#27152e",
+-        // Deep, rich muted violet backdrop
+-        stroke: "#6d1583",
+-        // Matches headingStroke
+-        fill: "#1b0f21",
+-        // Darker muted violet background
+-        text: "#f2f2f2"
+-        // Consistent bright text color
++        headingStroke: "#7a4e2a",
++        headingFill: "#2e1e14",
++        stroke: "#7a4e2a",
++        fill: "#1e140f",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#5f1c70",
+-        // Muted dark variant for note fill
+-        text: "#f2f2f2"
+-      },
+-      semi: "#342938",
+-      // Dark neutral-violet tone
+-      pattern: "#763a8b",
+-      // Retained existing pattern color
++        fill: "#6b3d22",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#9e00ee",
+-        p3: "color(display-p3 0.5651 0.0079 0.8986)"
++        srgb: "#f5a97f",
++        p3: "color(display-p3 0.961 0.663 0.498)"
+       }
+     },
+-    yellow: {
+-      solid: "#ffc034",
+-      fill: "#ffc034",
++    maroon: {
++      solid: "#ee99a0",
++      fill: "#ee99a0",
++      semi: "#3d2830",
++      pattern: "#c87888",
+       frame: {
+-        headingStroke: "#684e12",
+-        // Darker, muted variant of solid
+-        headingFill: "#2a2113",
+-        // Rich, muted dark-yellow background
+-        stroke: "#684e12",
+-        // Matches headingStroke
+-        fill: "#1e1911",
+-        // Darker muted shade for background fill
+-        text: "#f2f2f2"
+-        // Bright text color for readability
++        headingStroke: "#7a3d4a",
++        headingFill: "#2e1c22",
++        stroke: "#7a3d4a",
++        fill: "#1e1318",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#8a5e1c",
+-        // Muted, dark complementary variant
+-        text: "#f2f2f2"
+-      },
+-      semi: "#3b352b",
+-      // Dark muted neutral-yellow tone
+-      pattern: "#fecb92",
+-      // Existing shade retained
++        fill: "#6b2e38",
++        text: "#cad3f5"
++      },
+       highlight: {
+-        srgb: "#d2b700",
+-        p3: "color(display-p3 0.8078 0.7225 0.0312)"
++        srgb: "#ee99a0",
++        p3: "color(display-p3 0.933 0.600 0.627)"
+       }
+     },
+-    white: {
+-      solid: "#f3f3f3",
+-      fill: "#f3f3f3",
+-      semi: "#f5f5f5",
+-      pattern: "#f9f9f9",
++    red: {
++      solid: "#ed8796",
++      fill: "#ed8796",
++      semi: "#3d2530",
++      pattern: "#c86878",
+       frame: {
+-        headingStroke: "#ffffff",
+-        headingFill: "#ffffff",
+-        stroke: "#ffffff",
+-        fill: "#ffffff",
+-        text: "#000000"
++        headingStroke: "#7a3245",
++        headingFill: "#2e1620",
++        stroke: "#7a3245",
++        fill: "#1e1018",
++        text: "#cad3f5"
+       },
+       note: {
+-        fill: "#eaeaea",
+-        text: "#1d1d1d"
++        fill: "#6b2438",
++        text: "#cad3f5"
+       },
+       highlight: {
+-        srgb: "#ffffff",
+-        p3: "color(display-p3 1 1 1)"
++        srgb: "#ed8796",
++        p3: "color(display-p3 0.929 0.529 0.588)"
+       }
+     }
+   }

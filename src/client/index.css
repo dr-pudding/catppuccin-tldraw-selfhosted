@@ -1,88 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
-@import url('tldraw/tldraw.css');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@500;700&display=swap");
+@import url("tldraw/tldraw.css");
 
 body {
-	font-family: 'Inter', sans-serif;
-	overscroll-behavior: none;
+    font-family: "Overpass", sans-serif;
+    overscroll-behavior: none;
 }
 
 .RoomWrapper {
-	--background: white;
-	--text: hsl(0, 0%, 20%);
-	--gray-light: #f5f5f5;
-	--gray-dark: #e5e5e5;
-	--black-transparent-lighter: rgba(0, 0, 0, 0.15);
-	--black-transparent-light: rgba(0, 0, 0, 0.4);
-	--black-transparent-dark: rgba(0, 0, 0, 0.6);
-	--black-transparent-darker: rgba(0, 0, 0, 0.7);
-	--focus: hsl(217, 89%, 61%);
-	--whiteboard: hsl(240, 5%, 96%);
-	color-scheme: light;
+    --background: #1e2030;
+    --text: #cad3f5;
+    --gray-light: #363a4f;
+    --gray-dark: #494d64;
+    --black-transparent-lighter: rgba(202, 211, 245, 0.15);
+    --black-transparent-light: rgba(202, 211, 245, 0.4);
+    --black-transparent-dark: rgba(202, 211, 245, 0.6);
+    --black-transparent-darker: rgba(202, 211, 245, 0.7);
+    --focus: #8aadf4;
+    --whiteboard: #24273a;
+    color-scheme: dark;
 }
 
 :root:has(.tl-theme__dark) .RoomWrapper {
-	--background: black;
-	--text: hsl(0, 9%, 94%);
-	--gray-light: #333;
-	--gray-dark: #444;
-	--black-transparent-lighter: rgba(255, 255, 255, 0.15);
-	--black-transparent-light: rgba(255, 255, 255, 0.4);
-	--black-transparent-dark: rgba(255, 255, 255, 0.6);
-	--black-transparent-darker: rgba(255, 255, 255, 0.7);
-	--focus: hsl(217, 89%, 61%);
-	--whiteboard: hsl(240, 5%, 6.5%);
-	color-scheme: dark;
+    --background: #1e2030;
+    --text: #cad3f5;
+    --gray-light: #363a4f;
+    --gray-dark: #494d64;
+    --black-transparent-lighter: rgba(202, 211, 245, 0.15);
+    --black-transparent-light: rgba(202, 211, 245, 0.4);
+    --black-transparent-dark: rgba(202, 211, 245, 0.6);
+    --black-transparent-darker: rgba(202, 211, 245, 0.7);
+    --focus: #8aadf4;
+    --whiteboard: #24273a;
+    color-scheme: dark;
+}
+
+:root:has(.tl-theme__light) .RoomWrapper {
+    --background: #e6e9ef;
+    --text: #4c4f69;
+    --gray-light: #ccd0da;
+    --gray-dark: #bcc0cc;
+    --black-transparent-lighter: rgba(76, 79, 105, 0.15);
+    --black-transparent-light: rgba(76, 79, 105, 0.4);
+    --black-transparent-dark: rgba(76, 79, 105, 0.6);
+    --black-transparent-darker: rgba(76, 79, 105, 0.7);
+    --focus: #1e66f5;
+    --whiteboard: #eff1f5;
+    color-scheme: light;
 }
 
 .RoomWrapper {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	inset: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    inset: 0px;
 }
 
 .RoomWrapper-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	padding: 8px 16px;
-	gap: 16px;
-	background: var(--background);
-	border-bottom: 1px solid var(--gray-dark);
-	color: var(--text);
-	font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    background: var(--background);
+    border-bottom: 1px solid var(--gray-dark);
+    color: var(--text);
+    font-size: 14px;
 }
 
 .RoomWrapper-copy {
-	background: var(--black-transparent-lighter);
-	border: 1px solid var(--gray-dark);
-	border-radius: 4px;
-	padding: 4px 12px;
-	height: 24px;
-	cursor: pointer;
-	position: relative;
-	text-align: center;
+    background: var(--black-transparent-lighter);
+    border: 1px solid var(--gray-dark);
+    border-radius: 4px;
+    padding: 4px 12px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-family: inherit;
 }
 
 .RoomWrapper-copy:has(.RoomWrapper-copied) {
-	color: transparent;
+    color: transparent;
 }
 
 .RoomWrapper-copied {
-	color: var(--text);
-	position: absolute;
-	inset: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    color: var(--text);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .RoomWrapper-copy:hover {
-	border: 1px solid var(--black-transparent-lighter);
+    border: 1px solid var(--black-transparent-lighter);
 }
 
 .RoomWrapper-content {
-	position: relative;
-	flex: 1;
+    position: relative;
+    flex: 1;
+}
+
+/* Catppuccin Macchiato overrides. */
+.tl-container.tl-theme__dark {
+    --color-background: #24273a;
+    --color-panel: #1e2030;
+    --color-panel-contrast: #363a4f;
+    --color-shadow: #1e2030;
+    --color-text: #cad3f5;
+    --color-text-0: #cad3f5;
+    --color-text-1: #b8c0e0;
+    --color-text-2: #939ab7;
+    --color-text-3: #6e738d;
+    --color-border: #363a4f;
+    --color-hover: #363a4f;
+    --color-selected: #8aadf4;
+    --color-selected-contrast: #24273a;
+    --color-focus-ring: #8aadf4;
+    --color-accent: #8aadf4;
+    --color-accent-contrast: #24273a;
+    --color-muted-0: #363a4f;
+    --color-muted-1: #494d64;
+    --color-muted-2: #5b6078;
+    --color-low: #1e2030;
+    --color-low-border: #363a4f;
+    --color-divider: #363a4f;
+}
+
+/* Catppuccin Latte overrides. */
+.tl-container.tl-theme__light {
+    --color-background: #eff1f5;
+    --color-panel: #e6e9ef;
+    --color-panel-contrast: #ccd0da;
+    --color-shadow: #9ca0b0;
+    --color-text: #4c4f69;
+    --color-text-0: #4c4f69;
+    --color-text-1: #5c5f77;
+    --color-text-2: #6c6f85;
+    --color-text-3: #8c8fa1;
+    --color-border: #ccd0da;
+    --color-hover: #ccd0da;
+    --color-selected: #1e66f5;
+    --color-selected-contrast: #eff1f5;
+    --color-focus-ring: #1e66f5;
+    --color-accent: #1e66f5;
+    --color-accent-contrast: #eff1f5;
+    --color-muted-0: #dce0e8;
+    --color-muted-1: #ccd0da;
+    --color-muted-2: #bcc0cc;
+    --color-low: #e6e9ef;
+    --color-low-border: #ccd0da;
+    --color-divider: #ccd0da;
 }
