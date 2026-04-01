@@ -3,12 +3,7 @@
 pkgs.mkShell {
     buildInputs = with pkgs; [
         nodejs_22
-        nodePackages.corepack
+        nodePackages_latest.pnpm
         docker
     ];
-
-    shellHook = ''
-        corepack enable
-        corepack prepare pnpm@10.7.0 --activate
-    '';
 }
