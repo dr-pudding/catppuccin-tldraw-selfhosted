@@ -25,7 +25,7 @@ cd catppuccin-tldraw-selfhosted
 
 ### With pnpm
 
-Unlike the original FoxxMD version, this fork uses pnpm instead of yarn in order to patch base tldraw packages. Build the program:
+Unlike the original FoxxMD version, this fork uses pnpm instead of yarn in order to patch the base tldraw packages. Build the program:
 
 ```sh
 pnpm install
